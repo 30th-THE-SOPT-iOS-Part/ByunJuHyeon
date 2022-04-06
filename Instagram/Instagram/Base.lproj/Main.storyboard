@@ -216,6 +216,53 @@
             </objects>
             <point key="canvasLocation" x="1538" y="106"/>
         </scene>
+        <!--Success View Controller-->
+        <scene sceneID="BQM-kd-6xO">
+            <objects>
+                <viewController storyboardIdentifier="SuccessViewController" id="6EL-eg-kFq" customClass="SuccessViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XAZ-49-dab">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000님 Instagram에 오신 것을 환영합니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msi-bd-usr">
+                                <rect key="frame" x="50" y="304" width="275" height="61"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLq-im-FwX">
+                                <rect key="frame" x="38" y="385" width="299" height="15.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkc-9e-Xih">
+                                <rect key="frame" x="30" y="420.66666666666669" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IyS-hb-3xA"/>
+                                </constraints>
+                                <color key="tintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="완료하기"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ItC-Ko-xy7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bkc-9e-Xih" firstAttribute="leading" secondItem="ItC-Ko-xy7" secondAttribute="leading" constant="30" id="7RZ-Y9-SUZ"/>
+                            <constraint firstItem="Msi-bd-usr" firstAttribute="top" secondItem="ItC-Ko-xy7" secondAttribute="top" constant="260" id="Ia9-YG-C7f"/>
+                            <constraint firstItem="bkc-9e-Xih" firstAttribute="top" secondItem="gLq-im-FwX" secondAttribute="bottom" constant="20" id="R6j-ZH-np1"/>
+                            <constraint firstItem="gLq-im-FwX" firstAttribute="top" secondItem="Msi-bd-usr" secondAttribute="bottom" constant="20" id="UFz-Kg-XVX"/>
+                            <constraint firstAttribute="trailing" secondItem="Msi-bd-usr" secondAttribute="trailing" constant="50" id="WHl-fu-Sqe"/>
+                            <constraint firstItem="Msi-bd-usr" firstAttribute="leading" secondItem="XAZ-49-dab" secondAttribute="leading" constant="50" id="bfh-kl-pyU"/>
+                            <constraint firstItem="ItC-Ko-xy7" firstAttribute="trailing" secondItem="bkc-9e-Xih" secondAttribute="trailing" constant="30" id="ufb-LP-pF8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7n-j3-zUN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2264.8000000000002" y="105.66502463054188"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Instagram Black Logo" width="175" height="50"/>

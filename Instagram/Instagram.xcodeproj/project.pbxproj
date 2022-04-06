@@ -15,6 +15,7 @@
 		84D00B0127FE12CE00AEDEFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D00AFF27FE12CE00AEDEFA /* LaunchScreen.storyboard */; };
 		84D00B0927FE1A7C00AEDEFA /* Signup1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00B0827FE1A7B00AEDEFA /* Signup1ViewController.swift */; };
 		84D00B0B27FE1A9500AEDEFA /* Signup2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00B0A27FE1A9500AEDEFA /* Signup2ViewController.swift */; };
+		84D00B0D27FE1C8400AEDEFA /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00B0C27FE1C8400AEDEFA /* SuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		84D00B0227FE12CE00AEDEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D00B0827FE1A7B00AEDEFA /* Signup1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup1ViewController.swift; sourceTree = "<group>"; };
 		84D00B0A27FE1A9500AEDEFA /* Signup2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup2ViewController.swift; sourceTree = "<group>"; };
+		84D00B0C27FE1C8400AEDEFA /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				84D00AF827FE12CD00AEDEFA /* SigninViewController.swift */,
 				84D00AFA27FE12CD00AEDEFA /* Main.storyboard */,
 				84D00B0827FE1A7B00AEDEFA /* Signup1ViewController.swift */,
+				84D00B0C27FE1C8400AEDEFA /* SuccessViewController.swift */,
 				84D00B0A27FE1A9500AEDEFA /* Signup2ViewController.swift */,
 				84D00AFD27FE12CE00AEDEFA /* Assets.xcassets */,
 				84D00AFF27FE12CE00AEDEFA /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				84D00AF927FE12CD00AEDEFA /* SigninViewController.swift in Sources */,
 				84D00AF527FE12CD00AEDEFA /* AppDelegate.swift in Sources */,
 				84D00AF727FE12CD00AEDEFA /* SceneDelegate.swift in Sources */,
+				84D00B0D27FE1C8400AEDEFA /* SuccessViewController.swift in Sources */,
 				84D00B0B27FE1A9500AEDEFA /* Signup2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
