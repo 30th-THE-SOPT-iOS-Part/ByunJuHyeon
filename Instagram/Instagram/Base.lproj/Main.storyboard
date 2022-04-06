@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="60" y="105.66502463054188"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup1 View Controller-->
         <scene sceneID="luv-y5-fik">
             <objects>
-                <viewController id="PEn-iJ-UbK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signup1ViewController" id="PEn-iJ-UbK" customClass="Signup1ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afr-vn-yQI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,10 +155,10 @@
             </objects>
             <point key="canvasLocation" x="837.60000000000002" y="105.66502463054188"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup2 View Controller-->
         <scene sceneID="sVS-XW-wJt">
             <objects>
-                <viewController id="2N6-7G-72x" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signup2ViewController" id="2N6-7G-72x" customClass="Signup2ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pkd-A8-9GZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
