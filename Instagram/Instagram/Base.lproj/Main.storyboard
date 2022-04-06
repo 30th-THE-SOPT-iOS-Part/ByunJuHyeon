@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -53,16 +53,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="로그인"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="계정이 없으신가요?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9i-5f-QwL">
-                                <rect key="frame" x="94" y="499" width="111" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="계정이 없으신가요?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9i-5f-QwL">
+                                <rect key="frame" x="94" y="505" width="111" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6w-bF-Ok3">
-                                <rect key="frame" x="205" y="494" width="75" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6w-bF-Ok3">
+                                <rect key="frame" x="205" y="498" width="75" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="가입하기">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -81,7 +79,9 @@
                             <constraint firstItem="f40-xy-ZJ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Qph-50-mff"/>
                             <constraint firstItem="AD1-LK-7PG" firstAttribute="top" secondItem="ito-Ja-vkI" secondAttribute="bottom" constant="20" id="SIH-iy-Ejj"/>
                             <constraint firstItem="5zl-AD-Vdz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="UCY-mC-jhb"/>
+                            <constraint firstItem="W9i-5f-QwL" firstAttribute="top" secondItem="AD1-LK-7PG" secondAttribute="bottom" constant="30" id="Zdx-0U-N0t"/>
                             <constraint firstItem="f40-xy-ZJ1" firstAttribute="top" secondItem="2Gd-t5-meK" secondAttribute="bottom" constant="30" id="emE-US-zuq"/>
+                            <constraint firstItem="s6w-bF-Ok3" firstAttribute="centerY" secondItem="W9i-5f-QwL" secondAttribute="centerY" id="fng-aT-kZu"/>
                             <constraint firstItem="2Gd-t5-meK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="hzd-xZ-vdU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f40-xy-ZJ1" secondAttribute="trailing" constant="15" id="qR2-x1-7t0"/>
                             <constraint firstItem="5zl-AD-Vdz" firstAttribute="top" secondItem="f40-xy-ZJ1" secondAttribute="bottom" constant="10" id="s6i-gE-jOx"/>
@@ -89,10 +89,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Gd-t5-meK" secondAttribute="trailing" constant="90" id="xp7-79-RMm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jK2-M7-igC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60" y="105.66502463054188"/>
+            <point key="canvasLocation" x="1002.4" y="105.66502463054188"/>
         </scene>
         <!--Signup1 View Controller-->
         <scene sceneID="luv-y5-fik">
@@ -153,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAg-rJ-KPN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="837.60000000000002" y="105.66502463054188"/>
+            <point key="canvasLocation" x="1780" y="105.66502463054188"/>
         </scene>
         <!--Signup2 View Controller-->
         <scene sceneID="sVS-XW-wJt">
@@ -214,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4aI-et-Ejk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1538" y="106"/>
+            <point key="canvasLocation" x="2479.1999999999998" y="105.66502463054188"/>
         </scene>
         <!--Success View Controller-->
         <scene sceneID="BQM-kd-6xO">
@@ -261,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7n-j3-zUN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2264.8000000000002" y="105.66502463054188"/>
+            <point key="canvasLocation" x="3207.1999999999998" y="105.66502463054188"/>
         </scene>
     </scenes>
     <resources>
