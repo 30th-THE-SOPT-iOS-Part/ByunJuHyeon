@@ -9,11 +9,22 @@ import UIKit
 
 class SigninViewController: UIViewController {
 
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        passwordTextField.isSecureTextEntry = true
     }
 
+    @IBAction func signInButton(_ sender: Any) {
+    }
+    
+    @IBAction func signupButton(_ sender: Any) {
+        guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "Signup1ViewController") as? Signup1ViewController else { return }
+        
+            self.navigationController?.pushViewController(signupVC, animated: true)
+    }
 
 }
-

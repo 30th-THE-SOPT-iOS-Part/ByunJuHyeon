@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Instagram Black Logo" translatesAutoresizingMaskIntoConstraints="NO" id="2Gd-t5-meK">
-                                <rect key="frame" x="90" y="258" width="195" height="50"/>
+                                <rect key="frame" x="90" y="214" width="195" height="50"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호, 사용자 이름 또는 이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f40-xy-ZJ1">
-                                <rect key="frame" x="15" y="338" width="345" height="36"/>
+                                <rect key="frame" x="15" y="294" width="345" height="36"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="n1h-2Y-dPt"/>
@@ -29,7 +29,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5zl-AD-Vdz">
-                                <rect key="frame" x="15" y="384" width="345" height="36"/>
+                                <rect key="frame" x="15" y="340" width="345" height="36"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="juY-P8-7Tj"/>
@@ -38,33 +38,39 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ito-Ja-vkI">
-                                <rect key="frame" x="220" y="432" width="140" height="29"/>
+                                <rect key="frame" x="220" y="388" width="140" height="29"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="비밀번호를 잊으셨나요?">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AD1-LK-7PG">
-                                <rect key="frame" x="15" y="481" width="345" height="38"/>
+                                <rect key="frame" x="15" y="437" width="345" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="0RN-kj-Ol2"/>
                                 </constraints>
                                 <color key="tintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="로그인"/>
+                                <connections>
+                                    <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqx-On-eAa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 없으신가요?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9i-5f-QwL">
-                                <rect key="frame" x="120" y="549" width="108" height="17"/>
+                                <rect key="frame" x="120" y="505" width="108" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6w-bF-Ok3">
-                                <rect key="frame" x="220.99999999999997" y="542" width="72.666666666666657" height="31"/>
+                                <rect key="frame" x="220.99999999999997" y="498" width="72.666666666666657" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="가입하기">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Xs-9g-ZZF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -92,6 +98,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jK2-M7-igC"/>
+                    <connections>
+                        <outlet property="idTextField" destination="f40-xy-ZJ1" id="bg2-df-hoN"/>
+                        <outlet property="passwordTextField" destination="5zl-AD-Vdz" id="AUc-Ek-22T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,6 +144,17 @@
                                 <color key="tintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="다음"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="PEn-iJ-UbK" eventType="touchUpInside" id="OUl-oL-qCo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWN-gr-mN8">
+                                <rect key="frame" x="5" y="44" width="49" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icn_back_24" title=""/>
+                                <connections>
+                                    <action selector="backButton:" destination="PEn-iJ-UbK" eventType="touchUpInside" id="dDc-tc-QUr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tgD-3G-DKA"/>
@@ -145,14 +166,19 @@
                             <constraint firstItem="tgD-3G-DKA" firstAttribute="trailing" secondItem="5Dz-bW-b6k" secondAttribute="trailing" constant="90" id="PtH-BF-DMg"/>
                             <constraint firstItem="lqM-XP-1dx" firstAttribute="leading" secondItem="tgD-3G-DKA" secondAttribute="leading" constant="45" id="Qu0-lS-82x"/>
                             <constraint firstItem="tgD-3G-DKA" firstAttribute="trailing" secondItem="if2-2G-YHG" secondAttribute="trailing" constant="15" id="bdY-sW-ml3"/>
+                            <constraint firstItem="NWN-gr-mN8" firstAttribute="leading" secondItem="tgD-3G-DKA" secondAttribute="leading" constant="5" id="esw-Qt-Ukv"/>
                             <constraint firstItem="if2-2G-YHG" firstAttribute="top" secondItem="FH7-RM-GnW" secondAttribute="bottom" constant="18" id="i0H-lW-tQc"/>
                             <constraint firstItem="FH7-RM-GnW" firstAttribute="leading" secondItem="tgD-3G-DKA" secondAttribute="leading" constant="15" id="lUD-7E-y6X"/>
                             <constraint firstItem="FH7-RM-GnW" firstAttribute="top" secondItem="lqM-XP-1dx" secondAttribute="bottom" constant="30" id="mNT-1D-N1c"/>
                             <constraint firstItem="if2-2G-YHG" firstAttribute="leading" secondItem="tgD-3G-DKA" secondAttribute="leading" constant="15" id="mxc-OX-FKl"/>
                             <constraint firstItem="5Dz-bW-b6k" firstAttribute="leading" secondItem="tgD-3G-DKA" secondAttribute="leading" constant="90" id="qEj-lm-FSg"/>
+                            <constraint firstItem="NWN-gr-mN8" firstAttribute="top" secondItem="tgD-3G-DKA" secondAttribute="top" id="vM8-Al-PpD"/>
                             <constraint firstItem="lqM-XP-1dx" firstAttribute="top" secondItem="5Dz-bW-b6k" secondAttribute="bottom" constant="13" id="vnp-yB-vau"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userNameTextField" destination="FH7-RM-GnW" id="cI3-Tu-OKz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAg-rJ-KPN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,6 +221,17 @@
                                 <color key="tintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="다음"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="2N6-7G-72x" eventType="touchUpInside" id="UPH-SD-Myg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRF-K8-xkn">
+                                <rect key="frame" x="0.0" y="44" width="49" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icn_back_24" title=""/>
+                                <connections>
+                                    <action selector="backButton:" destination="2N6-7G-72x" eventType="touchUpInside" id="qLK-VM-aQd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pa0-VP-XTT"/>
@@ -202,6 +239,7 @@
                         <constraints>
                             <constraint firstItem="nzA-tz-bFZ" firstAttribute="leading" secondItem="pa0-VP-XTT" secondAttribute="leading" constant="45" id="7x0-OM-acf"/>
                             <constraint firstItem="nzA-tz-bFZ" firstAttribute="top" secondItem="NjS-wE-RJT" secondAttribute="bottom" constant="13" id="EHR-zq-AYU"/>
+                            <constraint firstItem="aRF-K8-xkn" firstAttribute="top" secondItem="pa0-VP-XTT" secondAttribute="top" id="Mcx-zL-3bv"/>
                             <constraint firstItem="pa0-VP-XTT" firstAttribute="trailing" secondItem="OJl-8f-AsF" secondAttribute="trailing" constant="15" id="Mys-vT-YEK"/>
                             <constraint firstItem="pa0-VP-XTT" firstAttribute="trailing" secondItem="NjS-wE-RJT" secondAttribute="trailing" constant="90" id="NPV-UI-mPe"/>
                             <constraint firstItem="OJl-8f-AsF" firstAttribute="leading" secondItem="pa0-VP-XTT" secondAttribute="leading" constant="15" id="Vnw-kK-hLK"/>
@@ -212,8 +250,12 @@
                             <constraint firstItem="uhH-VA-CKs" firstAttribute="leading" secondItem="pa0-VP-XTT" secondAttribute="leading" constant="15" id="gBc-cP-VnL"/>
                             <constraint firstItem="OJl-8f-AsF" firstAttribute="top" secondItem="nzA-tz-bFZ" secondAttribute="bottom" constant="30" id="mLG-kq-Agq"/>
                             <constraint firstItem="NjS-wE-RJT" firstAttribute="leading" secondItem="pa0-VP-XTT" secondAttribute="leading" constant="90" id="swj-xl-9WG"/>
+                            <constraint firstItem="aRF-K8-xkn" firstAttribute="leading" secondItem="pa0-VP-XTT" secondAttribute="leading" id="wMS-uN-LC4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="OJl-8f-AsF" id="oFK-gk-dOV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4aI-et-Ejk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +275,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLq-im-FwX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLq-im-FwX">
                                 <rect key="frame" x="38" y="385" width="299" height="15.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -247,6 +289,9 @@
                                 <color key="tintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="완료하기"/>
+                                <connections>
+                                    <action selector="okButton:" destination="6EL-eg-kFq" eventType="touchUpInside" id="Szc-M9-pcp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ItC-Ko-xy7"/>
@@ -258,9 +303,14 @@
                             <constraint firstItem="gLq-im-FwX" firstAttribute="top" secondItem="Msi-bd-usr" secondAttribute="bottom" constant="20" id="UFz-Kg-XVX"/>
                             <constraint firstAttribute="trailing" secondItem="Msi-bd-usr" secondAttribute="trailing" constant="50" id="WHl-fu-Sqe"/>
                             <constraint firstItem="Msi-bd-usr" firstAttribute="leading" secondItem="XAZ-49-dab" secondAttribute="leading" constant="50" id="bfh-kl-pyU"/>
+                            <constraint firstItem="ItC-Ko-xy7" firstAttribute="trailing" secondItem="gLq-im-FwX" secondAttribute="trailing" constant="38" id="enj-DK-5jW"/>
                             <constraint firstItem="ItC-Ko-xy7" firstAttribute="trailing" secondItem="bkc-9e-Xih" secondAttribute="trailing" constant="30" id="ufb-LP-pF8"/>
+                            <constraint firstItem="gLq-im-FwX" firstAttribute="leading" secondItem="ItC-Ko-xy7" secondAttribute="leading" constant="38" id="yUa-pN-ZLi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="Msi-bd-usr" id="ddL-6b-3kf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7n-j3-zUN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -269,10 +319,9 @@
         <!--Navigation Controller-->
         <scene sceneID="Qao-Fu-lHV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="09b-T8-2XB" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="09b-T8-2XB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="clR-6C-LMm">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -287,6 +336,7 @@
     </scenes>
     <resources>
         <image name="Instagram Black Logo" width="175" height="50"/>
+        <image name="icn_back_24" width="24.333333969116211" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
