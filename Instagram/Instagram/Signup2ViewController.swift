@@ -10,17 +10,21 @@ import UIKit
 class Signup2ViewController: UIViewController {
 
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
     var userId: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 다음 버튼 비활성화
+        nextButton.isEnabled = false
     }
 
-    @IBAction func backButton(_ sender: Any) {
+    @IBAction func backButtonOnClick(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func nextButton(_ sender: Any) {
+    @IBAction func nextButtonOnClick(_ sender: Any) {
         guard let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "SigninViewController") as? SigninViewController else { return }
         
         signinVC.modalPresentationStyle = .fullScreen

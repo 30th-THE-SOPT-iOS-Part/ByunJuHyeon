@@ -53,7 +53,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="로그인"/>
                                 <connections>
-                                    <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqx-On-eAa"/>
+                                    <action selector="signInButtonOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qlg-hg-h3K"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 없으신가요?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9i-5f-QwL">
@@ -69,7 +69,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="signupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebo-wn-azk"/>
+                                    <action selector="signupButtonOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyq-4D-23p"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -101,6 +101,7 @@
                     <connections>
                         <outlet property="idTextField" destination="f40-xy-ZJ1" id="bg2-df-hoN"/>
                         <outlet property="passwordTextField" destination="5zl-AD-Vdz" id="AUc-Ek-22T"/>
+                        <outlet property="signinButton" destination="AD1-LK-7PG" id="wwl-7R-9Mb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -145,7 +146,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="다음"/>
                                 <connections>
-                                    <action selector="nextButton:" destination="PEn-iJ-UbK" eventType="touchUpInside" id="OUl-oL-qCo"/>
+                                    <action selector="nextButtonOnClick:" destination="PEn-iJ-UbK" eventType="touchUpInside" id="v21-ag-I0q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWN-gr-mN8">
@@ -153,7 +154,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="icn_back_24" title=""/>
                                 <connections>
-                                    <action selector="backButton:" destination="PEn-iJ-UbK" eventType="touchUpInside" id="dDc-tc-QUr"/>
+                                    <action selector="backButtonOnClick:" destination="PEn-iJ-UbK" eventType="touchUpInside" id="ThV-Mu-nAV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,6 +178,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="if2-2G-YHG" id="2aU-5y-cbZ"/>
                         <outlet property="userIdTextField" destination="FH7-RM-GnW" id="PoD-GN-Sg8"/>
                     </connections>
                 </viewController>
@@ -222,7 +224,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="다음"/>
                                 <connections>
-                                    <action selector="nextButton:" destination="2N6-7G-72x" eventType="touchUpInside" id="UPH-SD-Myg"/>
+                                    <action selector="nextButtonOnClick:" destination="2N6-7G-72x" eventType="touchUpInside" id="koa-Z6-hr4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRF-K8-xkn">
@@ -230,7 +232,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="icn_back_24" title=""/>
                                 <connections>
-                                    <action selector="backButton:" destination="2N6-7G-72x" eventType="touchUpInside" id="qLK-VM-aQd"/>
+                                    <action selector="backButtonOnClick:" destination="2N6-7G-72x" eventType="touchUpInside" id="3az-75-i2r"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -254,6 +256,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="uhH-VA-CKs" id="ZeG-l3-JqL"/>
                         <outlet property="passwordTextField" destination="OJl-8f-AsF" id="oFK-gk-dOV"/>
                     </connections>
                 </viewController>
@@ -290,7 +293,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="완료하기"/>
                                 <connections>
-                                    <action selector="okButton:" destination="6EL-eg-kFq" eventType="touchUpInside" id="Szc-M9-pcp"/>
+                                    <action selector="okButtonOnClick:" destination="6EL-eg-kFq" eventType="touchUpInside" id="8W8-jZ-xRn"/>
                                 </connections>
                             </button>
                         </subviews>

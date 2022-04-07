@@ -18,7 +18,7 @@ class SigninViewController: UIViewController {
         setWelcomeLabel()
     }
     
-    @IBAction func okButton(_ sender: Any) {
+    @IBAction func okButtonOnClick(_ sender: Any) {
         let presentingVC = self.presentingViewController!
         let navigationController = presentingVC is UINavigationController ? presentingVC as? UINavigationController : presentingVC.navigationController
         
