@@ -19,9 +19,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signInButton(_ sender: Any) {
-        guard let successVC = self.storyboard? .instantiateViewController(withIdentifier: "SigninViewController") as? SigninViewController else { return }
+        guard let successVC = self.storyboard?.instantiateViewController(withIdentifier: "SigninViewController") as? SigninViewController else { return }
         
         successVC.modalPresentationStyle = .fullScreen
+        
+        // 로그인 완료 VC로 사용자 id 전달
+        successVC.userId = idTextField.text
         
         self.present(successVC, animated: true, completion: nil)
     }

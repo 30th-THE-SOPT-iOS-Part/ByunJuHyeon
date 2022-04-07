@@ -69,7 +69,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="signupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Xs-9g-ZZF"/>
+                                    <action selector="signupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebo-wn-azk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,7 +177,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="userNameTextField" destination="FH7-RM-GnW" id="cI3-Tu-OKz"/>
+                        <outlet property="userIdTextField" destination="FH7-RM-GnW" id="PoD-GN-Sg8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAg-rJ-KPN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -309,7 +309,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="welcomeLabel" destination="Msi-bd-usr" id="ddL-6b-3kf"/>
+                        <outlet property="welcomeLabel" destination="Msi-bd-usr" id="fVZ-yF-XJi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7n-j3-zUN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

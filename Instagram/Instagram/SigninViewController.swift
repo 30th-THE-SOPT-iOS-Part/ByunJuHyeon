@@ -10,9 +10,12 @@ import UIKit
 class SigninViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
+    var userId: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setWelcomeLabel()
     }
     
     @IBAction func okButton(_ sender: Any) {
@@ -24,5 +27,12 @@ class SigninViewController: UIViewController {
             return
         }
     }
+    
+    private func setWelcomeLabel() {
+         if let userId = userId {
+             welcomeLabel.text = "\(userId)님 Instagram에 오신 것을 환영합니다"
+             welcomeLabel.sizeToFit()
+         }
+     }
     
 }
