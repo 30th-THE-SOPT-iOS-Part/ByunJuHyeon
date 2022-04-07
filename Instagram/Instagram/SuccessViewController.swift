@@ -16,7 +16,13 @@ class SuccessViewController: UIViewController {
     }
     
     @IBAction func okButton(_ sender: Any) {
-        self.dismiss(animated: true)
+        let presentingVC = self.presentingViewController!
+        let navigationController = presentingVC is UINavigationController ? presentingVC as? UINavigationController : presentingVC.navigationController
+        
+        self.dismiss(animated: true){
+            navigationController?.popToRootViewController(animated: true)
+            return
+        }
     }
     
 }

@@ -19,6 +19,11 @@ class SigninViewController: UIViewController {
     }
 
     @IBAction func signInButton(_ sender: Any) {
+        guard let successVC = self.storyboard? .instantiateViewController(withIdentifier: "SuccessViewController") as? SuccessViewController else { return }
+        
+        successVC.modalPresentationStyle = .fullScreen
+        
+        self.present(successVC, animated: true, completion: nil)
     }
     
     @IBAction func signupButton(_ sender: Any) {
