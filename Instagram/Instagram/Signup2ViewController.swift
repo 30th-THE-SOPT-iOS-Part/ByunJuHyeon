@@ -20,11 +20,11 @@ class Signup2ViewController: UIViewController {
     }
     
     @IBAction func nextButton(_ sender: Any) {
-        guard let successVC = self.storyboard? .instantiateViewController(withIdentifier: "SuccessViewController") as? SuccessViewController else { return }
+        guard let signinVC = self.storyboard? .instantiateViewController(withIdentifier: "SigninViewController") as? SigninViewController else { return }
         
-        successVC.modalPresentationStyle = .fullScreen
+        signinVC.modalPresentationStyle = .fullScreen
         
-        self.present(successVC, animated: true, completion: nil)
+        self.present(signinVC, animated: true, completion: nil)
     }
     
 }

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SigninViewController.swift
 //  Instagram
 //
 //  Created by 변주현 on 2022/04/07.
@@ -9,27 +9,20 @@ import UIKit
 
 class SigninViewController: UIViewController {
 
-    @IBOutlet weak var idTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var welcomeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        passwordTextField.isSecureTextEntry = true
-    }
-
-    @IBAction func signInButton(_ sender: Any) {
-        guard let successVC = self.storyboard? .instantiateViewController(withIdentifier: "SuccessViewController") as? SuccessViewController else { return }
-        
-        successVC.modalPresentationStyle = .fullScreen
-        
-        self.present(successVC, animated: true, completion: nil)
     }
     
-    @IBAction func signupButton(_ sender: Any) {
-        guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "Signup1ViewController") as? Signup1ViewController else { return }
+    @IBAction func okButton(_ sender: Any) {
+        let presentingVC = self.presentingViewController!
+        let navigationController = presentingVC is UINavigationController ? presentingVC as? UINavigationController : presentingVC.navigationController
         
-            self.navigationController?.pushViewController(signupVC, animated: true)
+        self.dismiss(animated: true){
+            navigationController?.popToRootViewController(animated: true)
+            return
+        }
     }
-
+    
 }
