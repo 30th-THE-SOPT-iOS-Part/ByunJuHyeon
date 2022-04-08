@@ -14,12 +14,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var signinButton: UIButton!
     @IBOutlet weak var passwordEyeButton: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        resetTextField()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setButtonOption()
         setTextFieldOption()
         addActionToTextField()
+    }
+    
+    private func resetTextField() {
+        idTextField.text?.removeAll()
+        passwordTextField.text?.removeAll()
     }
     
     private func setButtonOption() {
@@ -32,7 +42,6 @@ class ViewController: UIViewController {
     private func setTextFieldOption() {
         // 비밀번호 입력 시 보안처리
         passwordTextField.isSecureTextEntry = true
-        
         // TextField에 입력하면 Clear 버튼이 나오도록 표시
         idTextField.clearButtonMode = .whileEditing
         // 눈 아이콘을 위해 주석 처리함
