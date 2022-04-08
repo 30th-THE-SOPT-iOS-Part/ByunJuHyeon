@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signinButton: UIButton!
-    @IBOutlet weak var eyeButton: UIButton!
+    @IBOutlet weak var passwordEyeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         signinButton.isEnabled = false
         addActionToTextField()
         // 눈 아이콘 버튼 default 보안처리가 true이므로 hidden 이미지로 세팅
-        eyeButton.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
+        passwordEyeButton.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
     }
     
     private func setTextFieldOption() {
@@ -54,19 +54,19 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func eyeDidTap(_ sender: Any) {
+    @IBAction func passwordEyeButtonDidTap(_ sender: Any) {
         // textField에 대한 처리를 true -> false || false -> true
         passwordTextField.isSecureTextEntry.toggle()
         // 버튼 선택 유무에 따른 눈 모양 이미지 변경
-        if eyeButton.isSelected {
-            eyeButton.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
+        if passwordEyeButton.isSelected {
+            passwordEyeButton.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
         } else {
-            eyeButton.setImage(UIImage(named: "password shown eye icon"), for: .normal)
+            passwordEyeButton.setImage(UIImage(named: "password shown eye icon"), for: .normal)
         }
         // eyeButton isSelected 값 반전
-        eyeButton.isSelected.toggle()
+        passwordEyeButton.isSelected.toggle()
         // 선택 시 틴트 컬러를 투명으로 변경해줌
-        eyeButton.tintColor = .clear
+        passwordEyeButton.tintColor = .clear
     }
 
     @IBAction func signinButtonDidTap(_ sender: Any) {

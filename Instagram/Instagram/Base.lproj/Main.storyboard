@@ -77,7 +77,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="eyeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MXt-du-Awf"/>
+                                    <action selector="passwordEyeButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vi6-KH-zU7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,8 +109,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="jK2-M7-igC"/>
                     <connections>
-                        <outlet property="eyeButton" destination="CFr-1J-5PQ" id="1Ug-vb-Lt7"/>
                         <outlet property="idTextField" destination="f40-xy-ZJ1" id="bg2-df-hoN"/>
+                        <outlet property="passwordEyeButton" destination="CFr-1J-5PQ" id="1Ug-vb-Lt7"/>
                         <outlet property="passwordTextField" destination="5zl-AD-Vdz" id="AUc-Ek-22T"/>
                         <outlet property="signinButton" destination="AD1-LK-7PG" id="wwl-7R-9Mb"/>
                     </connections>
