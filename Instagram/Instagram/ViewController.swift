@@ -17,10 +17,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setButtonOption()
         setTextFieldOption()
+        addActionToTextField()
+    }
+    
+    private func setButtonOption() {
         // 로그인 버튼 비활성화
         signinButton.isEnabled = false
-        addActionToTextField()
         // 눈 아이콘 버튼 default 보안처리가 true이므로 hidden 이미지로 세팅
         passwordEyeButton.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
     }

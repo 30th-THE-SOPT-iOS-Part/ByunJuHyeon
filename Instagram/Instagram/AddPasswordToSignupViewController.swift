@@ -16,10 +16,14 @@ class AddPasswordToSignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        setButtonOption()
         setTextFieldOption()
+        addActionToTextField()
+    }
+    
+    private func setButtonOption() {
         // 다음 버튼 비활성화
         nextButton.isEnabled = false
-        addActionToTextField()
     }
     
     private func setTextFieldOption() {
