@@ -16,9 +16,15 @@ class Signup1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setTextFieldOption()
         // 다음 버튼 비활성화
         nextButton.isEnabled = false
         addActionToTextField()
+    }
+    
+    private func setTextFieldOption() {
+        // TextField에 입력하면 Clear 버튼이 나오도록 표시
+        userIdTextField.clearButtonMode = .whileEditing
     }
     
     private func addActionToTextField() {
