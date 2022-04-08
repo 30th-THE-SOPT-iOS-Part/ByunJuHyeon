@@ -18,8 +18,11 @@ class Signup2ViewController: UIViewController {
         
         // 다음 버튼 비활성화
         nextButton.isEnabled = false
-        
-        // TextField에 이벤트 감지 함수 addTarget() 붙이기
+        addActionToTextField()
+    }
+    
+    private func addActionToTextField() {
+        // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
         self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
     

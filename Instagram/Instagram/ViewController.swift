@@ -17,13 +17,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setTextFieldOption()
-        
         // 로그인 버튼 비활성화
         signinButton.isEnabled = false
-        
-        // TextField에 이벤트 감지를 위한 addTarget() 붙이기
-        self.idTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
-        self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        addActionToTextField()
     }
     
     private func setTextFieldOption() {
@@ -33,6 +29,12 @@ class ViewController: UIViewController {
         // TextField에 입력하면 Clear 버튼이 나오도록 표시
         idTextField.clearButtonMode = .whileEditing
         passwordTextField.clearButtonMode = .whileEditing
+    }
+    
+    private func addActionToTextField() {
+        // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
+        self.idTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
     
     @objc func textFieldDidChange(sender: UITextField) {

@@ -15,14 +15,16 @@ class Signup1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // 다음 버튼 비활성화
         nextButton.isEnabled = false
-        
-        // TextField에 이벤트 감지 함수 addTarget() 붙이기
-        self.userIdTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        addActionToTextField()
     }
     
+    private func addActionToTextField() {
+        // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
+        self.userIdTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+    }
     
     @objc func textFieldDidChange(sender: UITextField) {
         if sender.text?.isEmpty == true {
