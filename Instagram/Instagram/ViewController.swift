@@ -61,11 +61,11 @@ class ViewController: UIViewController {
     @IBAction func passwordEyeButtonDidTap(_ sender: Any) {
         // textField에 대한 처리를 true -> false || false -> true
         passwordTextField.isSecureTextEntry.toggle()
-        // 버튼 선택 유무에 따른 눈 모양 이미지 변경
-        let eyeImage = passwordEyeButton.isSelected ? "password hidden eye icon" : "password shown eye icon"
-        passwordEyeButton.setImage(UIImage(named: eyeImage), for: .normal)
         // eyeButton isSelected 값 반전
         passwordEyeButton.isSelected.toggle()
+        // 버튼 선택 유무에 따른 눈 모양 이미지 변경
+        let eyeImage = passwordEyeButton.isSelected ? "password shown eye icon" : "password hidden eye icon"
+        passwordEyeButton.setImage(UIImage(named: eyeImage), for: .normal)
         // 선택 시 틴트 컬러를 투명으로 변경해줌
         passwordEyeButton.tintColor = .clear
     }
