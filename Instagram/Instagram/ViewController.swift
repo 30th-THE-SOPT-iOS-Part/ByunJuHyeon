@@ -66,6 +66,8 @@ class ViewController: UIViewController {
         }
         // eyeButton isSelected 값 반전
         eyeButton.isSelected.toggle()
+        // 선택 시 틴트 컬러를 투명으로 변경해줌
+        eyeButton.tintColor = .clear
     }
 
     @IBAction func signinButtonDidTap(_ sender: Any) {
