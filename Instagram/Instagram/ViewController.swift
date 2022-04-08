@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signinButton: UIButton!
+    @IBOutlet weak var eyeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
         // 로그인 버튼 비활성화
         signinButton.isEnabled = false
         addActionToTextField()
+        // 눈 아이콘 버튼 default 보안처리가 true이므로 hidden 이미지로 세팅
+        eyeButton.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
     }
     
     private func setTextFieldOption() {
@@ -28,13 +31,15 @@ class ViewController: UIViewController {
         
         // TextField에 입력하면 Clear 버튼이 나오도록 표시
         idTextField.clearButtonMode = .whileEditing
-        passwordTextField.clearButtonMode = .whileEditing
+        // 눈 아이콘을 위해 주석 처리함
+        // passwordTextField.clearButtonMode = .whileEditing
     }
     
     private func addActionToTextField() {
         // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
         self.idTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        print("ff")
     }
     
     @objc func textFieldDidChange(sender: UITextField) {
@@ -48,6 +53,18 @@ class ViewController: UIViewController {
         } else {
             self.signinButton.isEnabled = true
         }
+    }
+    
+    @IBAction func eyeDidTap(_ sender: Any) {
+        // textField에 대한 처리를 true -> false || false -> true
+        passwordTextField.isSecureTextEntry.toggle()
+        // 버튼 선택 유무에 따른 눈 모양 이미지 변경
+        if eyeButton.isSelected {
+            eyeButton.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
+        } else {
+            eyeButton.setImage(UIImage(named: "password shown eye icon"), for: .normal)
+        }
+        eyeButton.isSelected.toggle()
     }
 
     @IBAction func signinButtonDidTap(_ sender: Any) {
