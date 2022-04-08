@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         // 로그인 버튼 비활성화
         signinButton.isEnabled = false
         
-        // TextField에 이벤트 감지 함수 addTarget() 붙이기
+        // TextField에 이벤트 감지를 위한 addTarget() 붙이기
         self.idTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
