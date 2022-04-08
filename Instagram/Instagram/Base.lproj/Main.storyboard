@@ -119,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="1944.8" y="105.66502463054188"/>
         </scene>
-        <!--Signup1 View Controller-->
+        <!--Add Name To Signup View Controller-->
         <scene sceneID="luv-y5-fik">
             <objects>
-                <viewController storyboardIdentifier="Signup1ViewController" id="PEn-iJ-UbK" customClass="Signup1ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signup1ViewController" id="PEn-iJ-UbK" customClass="AddNameToSignupViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afr-vn-yQI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="2722.4000000000001" y="105.66502463054188"/>
         </scene>
-        <!--Signup2 View Controller-->
+        <!--Add Password To Signup View Controller-->
         <scene sceneID="sVS-XW-wJt">
             <objects>
-                <viewController storyboardIdentifier="Signup2ViewController" id="2N6-7G-72x" customClass="Signup2ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signup2ViewController" id="2N6-7G-72x" customClass="AddPasswordToSignupViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pkd-A8-9GZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
