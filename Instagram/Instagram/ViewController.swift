@@ -55,16 +55,7 @@ class ViewController: UIViewController {
     }
     
     @objc func textFieldDidChange(sender: UITextField) {
-        // 현재 id, password 값 받아오기
-        let id = idTextField.text
-        let password = passwordTextField.text
-        
-        // 현재 id 또는 password 값이 있는지 확인
-        if id?.isEmpty == true || password?.isEmpty == true{
-            self.signinButton.isEnabled = false
-        } else {
-            self.signinButton.isEnabled = true
-        }
+        self.signinButton.isEnabled = (idTextField.hasText && passwordTextField.hasText) ? true : false
     }
     
     @IBAction func passwordEyeButtonDidTap(_ sender: Any) {

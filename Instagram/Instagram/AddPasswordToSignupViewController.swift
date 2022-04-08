@@ -37,11 +37,7 @@ class AddPasswordToSignupViewController: UIViewController {
     }
     
     @objc func textFieldDidChange(sender: UITextField) {
-        if sender.text?.isEmpty == true {
-            self.nextButton.isEnabled = false
-        } else {
-            self.nextButton.isEnabled = true
-        }
+        self.nextButton.isEnabled = sender.hasText ? true : false
     }
 
     @IBAction func backButtonDidTap(_ sender: Any) {
