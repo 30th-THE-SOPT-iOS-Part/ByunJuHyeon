@@ -39,7 +39,6 @@ class ViewController: UIViewController {
         // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
         self.idTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
-        print("ff")
     }
     
     @objc func textFieldDidChange(sender: UITextField) {
