@@ -64,6 +64,7 @@ class ViewController: UIViewController {
         } else {
             eyeButton.setImage(UIImage(named: "password shown eye icon"), for: .normal)
         }
+        // eyeButton isSelected 값 반전
         eyeButton.isSelected.toggle()
     }
 
