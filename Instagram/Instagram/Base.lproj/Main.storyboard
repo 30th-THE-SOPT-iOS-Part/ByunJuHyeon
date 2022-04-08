@@ -53,7 +53,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="로그인"/>
                                 <connections>
-                                    <action selector="signInButtonOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qlg-hg-h3K"/>
+                                    <action selector="signinButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyE-5g-CLN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 없으신가요?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9i-5f-QwL">
@@ -69,7 +69,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="signupButtonOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyq-4D-23p"/>
+                                    <action selector="signupButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AzA-Xz-yVa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -146,7 +146,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="다음"/>
                                 <connections>
-                                    <action selector="nextButtonOnClick:" destination="PEn-iJ-UbK" eventType="touchUpInside" id="v21-ag-I0q"/>
+                                    <action selector="nextButtonDidTap:" destination="PEn-iJ-UbK" eventType="touchUpInside" id="h18-fy-wMS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWN-gr-mN8">
@@ -154,7 +154,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="icn_back_24" title=""/>
                                 <connections>
-                                    <action selector="backButtonOnClick:" destination="PEn-iJ-UbK" eventType="touchUpInside" id="ThV-Mu-nAV"/>
+                                    <action selector="backButtonDidTap:" destination="PEn-iJ-UbK" eventType="touchUpInside" id="EwJ-fs-T5D"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -224,7 +224,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="다음"/>
                                 <connections>
-                                    <action selector="nextButtonOnClick:" destination="2N6-7G-72x" eventType="touchUpInside" id="koa-Z6-hr4"/>
+                                    <action selector="nextButtonDidTap:" destination="2N6-7G-72x" eventType="touchUpInside" id="Jrr-oI-LjC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRF-K8-xkn">
@@ -232,7 +232,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="icn_back_24" title=""/>
                                 <connections>
-                                    <action selector="backButtonOnClick:" destination="2N6-7G-72x" eventType="touchUpInside" id="3az-75-i2r"/>
+                                    <action selector="backButtonDidTap:" destination="2N6-7G-72x" eventType="touchUpInside" id="g86-GG-0gA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -293,7 +293,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="완료하기"/>
                                 <connections>
-                                    <action selector="okButtonOnClick:" destination="6EL-eg-kFq" eventType="touchUpInside" id="8W8-jZ-xRn"/>
+                                    <action selector="okButtonDidTap:" destination="6EL-eg-kFq" eventType="touchUpInside" id="5so-Il-fqp"/>
                                 </connections>
                             </button>
                         </subviews>

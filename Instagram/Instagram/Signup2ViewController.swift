@@ -18,13 +18,24 @@ class Signup2ViewController: UIViewController {
         
         // 다음 버튼 비활성화
         nextButton.isEnabled = false
+        
+        // TextField에 이벤트 감지 함수 addTarget() 붙이기
+        self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+    }
+    
+    @objc func textFieldDidChange(sender: UITextField) {
+        if sender.text?.isEmpty == true {
+            self.nextButton.isEnabled = false
+        } else {
+            self.nextButton.isEnabled = true
+        }
     }
 
-    @IBAction func backButtonOnClick(_ sender: Any) {
+    @IBAction func backButtonDidTap(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func nextButtonOnClick(_ sender: Any) {
+    @IBAction func nextButtonDidTap(_ sender: Any) {
         guard let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "SigninViewController") as? SigninViewController else { return }
         
         signinVC.modalPresentationStyle = .fullScreen
