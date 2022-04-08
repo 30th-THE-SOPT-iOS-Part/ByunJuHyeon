@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signupButtonDidTap(_ sender: Any) {
-        guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "Signup1ViewController") as? AddNameToSignupViewController else { return }
+        guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "AddNameToSignupViewController") as? AddNameToSignupViewController else { return }
         
             self.navigationController?.pushViewController(signupVC, animated: true)
     }

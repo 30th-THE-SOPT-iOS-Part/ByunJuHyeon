@@ -122,7 +122,7 @@
         <!--Add Name To Signup View Controller-->
         <scene sceneID="luv-y5-fik">
             <objects>
-                <viewController storyboardIdentifier="Signup1ViewController" id="PEn-iJ-UbK" customClass="AddNameToSignupViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddNameToSignupViewController" id="PEn-iJ-UbK" customClass="AddNameToSignupViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afr-vn-yQI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,7 +200,7 @@
         <!--Add Password To Signup View Controller-->
         <scene sceneID="sVS-XW-wJt">
             <objects>
-                <viewController storyboardIdentifier="Signup2ViewController" id="2N6-7G-72x" customClass="AddPasswordToSignupViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddPasswordToSignupViewController" id="2N6-7G-72x" customClass="AddPasswordToSignupViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pkd-A8-9GZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

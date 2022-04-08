@@ -49,7 +49,7 @@ class AddNameToSignupViewController: UIViewController {
     }
     
     @IBAction func nextButtonDidTap(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "Signup2ViewController") as? AddPasswordToSignupViewController else { return }
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "AddPasswordToSignupViewController") as? AddPasswordToSignupViewController else { return }
         
         // 회원가입(2) VC로 사용자 이름 전달
         nextVC.userId = userIdTextField.text
