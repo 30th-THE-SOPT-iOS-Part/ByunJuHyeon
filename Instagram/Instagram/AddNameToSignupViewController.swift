@@ -9,7 +9,7 @@ import UIKit
 
 class AddNameToSignupViewController: UIViewController {
 
-    @IBOutlet weak var userIdTextField: UITextField!
+    @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     var userName: String?
     
@@ -28,12 +28,12 @@ class AddNameToSignupViewController: UIViewController {
     
     private func setTextFieldOption() {
         // TextField에 입력하면 Clear 버튼이 나오도록 표시
-        userIdTextField.clearButtonMode = .whileEditing
+        idTextField.clearButtonMode = .whileEditing
     }
     
     private func addActionToTextField() {
         // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
-        self.userIdTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        self.idTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
     
     @objc func textFieldDidChange(sender: UITextField) {
@@ -48,7 +48,7 @@ class AddNameToSignupViewController: UIViewController {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "AddPasswordToSignupViewController") as? AddPasswordToSignupViewController else { return }
         
         // 회원가입(2) VC로 사용자 이름 전달
-        nextVC.userId = userIdTextField.text
+        nextVC.userId = idTextField.text
         
         self.navigationController?.pushViewController(nextVC, animated: true)
     }

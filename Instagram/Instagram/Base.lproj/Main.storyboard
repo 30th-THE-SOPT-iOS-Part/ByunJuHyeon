@@ -49,7 +49,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="0RN-kj-Ol2"/>
                                 </constraints>
-                                <color key="tintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="로그인"/>
                                 <connections>
@@ -189,8 +189,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="idTextField" destination="FH7-RM-GnW" id="PoD-GN-Sg8"/>
                         <outlet property="nextButton" destination="if2-2G-YHG" id="2aU-5y-cbZ"/>
-                        <outlet property="userIdTextField" destination="FH7-RM-GnW" id="PoD-GN-Sg8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAg-rJ-KPN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -353,6 +353,9 @@
         <image name="icn_back_24" width="24.333333969116211" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
