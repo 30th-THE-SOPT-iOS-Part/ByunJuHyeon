@@ -44,7 +44,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AD1-LK-7PG">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AD1-LK-7PG">
                                 <rect key="frame" x="15" y="437" width="345" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="0RN-kj-Ol2"/>
@@ -73,9 +73,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFr-1J-5PQ">
-                                <rect key="frame" x="336" y="351" width="24" height="14"/>
+                                <rect key="frame" x="316" y="341" width="44" height="34"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
+                                <buttonConfiguration key="configuration" style="plain" image="password hidden eye icon"/>
                                 <connections>
                                     <action selector="passwordEyeButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vi6-KH-zU7"/>
                                 </connections>
@@ -148,7 +148,7 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if2-2G-YHG">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if2-2G-YHG">
                                 <rect key="frame" x="15" y="262.33333333333331" width="345" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="wz9-PI-rFA"/>
@@ -226,7 +226,7 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhH-VA-CKs">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhH-VA-CKs">
                                 <rect key="frame" x="15" y="262.33333333333331" width="345" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8ad-Xw-Rgn"/>
@@ -351,6 +351,7 @@
     <resources>
         <image name="Instagram Black Logo" width="175" height="50"/>
         <image name="icn_back_24" width="24.333333969116211" height="24"/>
+        <image name="password hidden eye icon" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
