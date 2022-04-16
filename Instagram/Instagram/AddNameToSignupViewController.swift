@@ -37,7 +37,7 @@ class AddNameToSignupViewController: UIViewController {
     }
     
     @objc func textFieldDidChange(sender: UITextField) {
-        self.nextButton.isEnabled = sender.hasText ? true : false
+        self.nextButton.isEnabled = sender.hasText
     }
     
     @IBAction func backButtonDidTap(_ sender: Any) {
