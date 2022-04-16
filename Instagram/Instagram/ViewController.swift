@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     }
     
     @objc func textFieldDidChange(sender: UITextField) {
-        self.signinButton.isEnabled = (idTextField.hasText && passwordTextField.hasText) ? true : false
+        self.signinButton.isEnabled = (idTextField.hasText && passwordTextField.hasText)
     }
     
     @IBAction func passwordEyeButtonDidTap(_ sender: Any) {
