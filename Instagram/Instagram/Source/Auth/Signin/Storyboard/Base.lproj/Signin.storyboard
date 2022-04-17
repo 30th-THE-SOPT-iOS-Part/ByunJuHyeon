@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Signin View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SigninViewController" id="BYZ-38-t0r" customClass="SigninViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="1944.8" y="105.66502463054188"/>
         </scene>
-        <!--SigninViewController-->
+        <!--WelcomeViewController-->
         <scene sceneID="pt3-7c-9J7">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SigninViewController" storyboardName="Signin" referencedIdentifier="SigninViewController" id="QRT-bX-JWb" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="WelcomeViewController" storyboardName="Welcome" referencedIdentifier="WelcomeViewController" id="QRT-bX-JWb" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IB5-83-4fR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2682" y="88"/>

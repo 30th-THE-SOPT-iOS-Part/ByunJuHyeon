@@ -1,5 +1,5 @@
 //
-//  SigninViewController.swift
+//  WelcomeViewController.swift
 //  Instagram
 //
 //  Created by 변주현 on 2022/04/07.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SigninViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
     var userId: String?

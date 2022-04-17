@@ -8,34 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		84AFA2FE280BC3AD00765633 /* AddNameToSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */; };
-		84AFA301280BC52800765633 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA300280BC52800765633 /* Signin.storyboard */; };
+		84AFA301280BC52800765633 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA300280BC52800765633 /* Welcome.storyboard */; };
 		84AFA303280BC5EA00765633 /* AddPasswordToSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */; };
 		84D00AF527FE12CD00AEDEFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00AF427FE12CD00AEDEFA /* AppDelegate.swift */; };
 		84D00AF727FE12CD00AEDEFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00AF627FE12CD00AEDEFA /* SceneDelegate.swift */; };
-		84D00AF927FE12CD00AEDEFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00AF827FE12CD00AEDEFA /* ViewController.swift */; };
-		84D00AFC27FE12CD00AEDEFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D00AFA27FE12CD00AEDEFA /* Main.storyboard */; };
+		84D00AF927FE12CD00AEDEFA /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00AF827FE12CD00AEDEFA /* SigninViewController.swift */; };
+		84D00AFC27FE12CD00AEDEFA /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D00AFA27FE12CD00AEDEFA /* Signin.storyboard */; };
 		84D00AFE27FE12CE00AEDEFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D00AFD27FE12CE00AEDEFA /* Assets.xcassets */; };
 		84D00B0127FE12CE00AEDEFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D00AFF27FE12CE00AEDEFA /* LaunchScreen.storyboard */; };
 		84D00B0927FE1A7C00AEDEFA /* AddNameToSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00B0827FE1A7B00AEDEFA /* AddNameToSignupViewController.swift */; };
 		84D00B0B27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00B0A27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift */; };
-		84D00B0D27FE1C8400AEDEFA /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00B0C27FE1C8400AEDEFA /* SigninViewController.swift */; };
+		84D00B0D27FE1C8400AEDEFA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00B0C27FE1C8400AEDEFA /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddNameToSignup.storyboard; sourceTree = "<group>"; };
-		84AFA300280BC52800765633 /* Signin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
+		84AFA300280BC52800765633 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPasswordToSignup.storyboard; sourceTree = "<group>"; };
 		84D00AF127FE12CD00AEDEFA /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D00AF427FE12CD00AEDEFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D00AF627FE12CD00AEDEFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84D00AF827FE12CD00AEDEFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84D00AFB27FE12CD00AEDEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84D00AF827FE12CD00AEDEFA /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		84D00AFB27FE12CD00AEDEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Signin.storyboard; sourceTree = "<group>"; };
 		84D00AFD27FE12CE00AEDEFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D00B0027FE12CE00AEDEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D00B0227FE12CE00AEDEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D00B0827FE1A7B00AEDEFA /* AddNameToSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNameToSignupViewController.swift; sourceTree = "<group>"; };
 		84D00B0A27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordToSignupViewController.swift; sourceTree = "<group>"; };
-		84D00B0C27FE1C8400AEDEFA /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		84D00B0C27FE1C8400AEDEFA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 		84AFA2F5280BBB9D00765633 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				84AFA2F7280BBCDB00765633 /* Storyboard */,
+				84D00AFF27FE12CE00AEDEFA /* LaunchScreen.storyboard */,
 				84D00AFD27FE12CE00AEDEFA /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -68,20 +68,11 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		84AFA2F7280BBCDB00765633 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				84D00AFF27FE12CE00AEDEFA /* LaunchScreen.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
 		84AFA2F8280BBD2C00765633 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				84AFA306280BC6AB00765633 /* Singup */,
-				84AFA305280BC6A000765633 /* Signin */,
-				84AFA304280BC68400765633 /* Login */,
+				84AFA304280BC68400765633 /* Signin */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -94,20 +85,11 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		84AFA304280BC68400765633 /* Login */ = {
+		84AFA304280BC68400765633 /* Signin */ = {
 			isa = PBXGroup;
 			children = (
-				84D00AF827FE12CD00AEDEFA /* ViewController.swift */,
-				84D00AFA27FE12CD00AEDEFA /* Main.storyboard */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		84AFA305280BC6A000765633 /* Signin */ = {
-			isa = PBXGroup;
-			children = (
-				84AFA300280BC52800765633 /* Signin.storyboard */,
-				84D00B0C27FE1C8400AEDEFA /* SigninViewController.swift */,
+				84AFA30B280BCE0B00765633 /* ViewController */,
+				84AFA30C280BCE1400765633 /* Storyboard */,
 			);
 			path = Signin;
 			sourceTree = "<group>";
@@ -115,12 +97,46 @@
 		84AFA306280BC6AB00765633 /* Singup */ = {
 			isa = PBXGroup;
 			children = (
-				84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */,
-				84D00B0A27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift */,
-				84D00B0827FE1A7B00AEDEFA /* AddNameToSignupViewController.swift */,
-				84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */,
+				84AFA308280BCD9B00765633 /* ViewController */,
+				84AFA307280BCD8B00765633 /* Storyboard */,
 			);
 			path = Singup;
+			sourceTree = "<group>";
+		};
+		84AFA307280BCD8B00765633 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */,
+				84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84AFA308280BCD9B00765633 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84D00B0A27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift */,
+				84D00B0827FE1A7B00AEDEFA /* AddNameToSignupViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84AFA30B280BCE0B00765633 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84D00B0C27FE1C8400AEDEFA /* WelcomeViewController.swift */,
+				84D00AF827FE12CD00AEDEFA /* SigninViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84AFA30C280BCE1400765633 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84D00AFA27FE12CD00AEDEFA /* Signin.storyboard */,
+				84AFA300280BC52800765633 /* Welcome.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		84D00AE827FE12CD00AEDEFA = {
@@ -207,12 +223,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AFA301280BC52800765633 /* Signin.storyboard in Resources */,
+				84AFA301280BC52800765633 /* Welcome.storyboard in Resources */,
 				84AFA2FE280BC3AD00765633 /* AddNameToSignup.storyboard in Resources */,
 				84D00B0127FE12CE00AEDEFA /* LaunchScreen.storyboard in Resources */,
 				84D00AFE27FE12CE00AEDEFA /* Assets.xcassets in Resources */,
 				84AFA303280BC5EA00765633 /* AddPasswordToSignup.storyboard in Resources */,
-				84D00AFC27FE12CD00AEDEFA /* Main.storyboard in Resources */,
+				84D00AFC27FE12CD00AEDEFA /* Signin.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D00B0927FE1A7C00AEDEFA /* AddNameToSignupViewController.swift in Sources */,
-				84D00AF927FE12CD00AEDEFA /* ViewController.swift in Sources */,
+				84D00AF927FE12CD00AEDEFA /* SigninViewController.swift in Sources */,
 				84D00AF527FE12CD00AEDEFA /* AppDelegate.swift in Sources */,
 				84D00AF727FE12CD00AEDEFA /* SceneDelegate.swift in Sources */,
-				84D00B0D27FE1C8400AEDEFA /* SigninViewController.swift in Sources */,
+				84D00B0D27FE1C8400AEDEFA /* WelcomeViewController.swift in Sources */,
 				84D00B0B27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,12 +251,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84D00AFA27FE12CD00AEDEFA /* Main.storyboard */ = {
+		84D00AFA27FE12CD00AEDEFA /* Signin.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				84D00AFB27FE12CD00AEDEFA /* Base */,
 			);
-			name = Main.storyboard;
+			name = Signin.storyboard;
 			sourceTree = "<group>";
 		};
 		84D00AFF27FE12CE00AEDEFA /* LaunchScreen.storyboard */ = {
@@ -380,7 +396,7 @@
 				INFOPLIST_FILE = Instagram/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Signin;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -408,7 +424,7 @@
 				INFOPLIST_FILE = Instagram/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Signin;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -33,13 +33,13 @@ class AddPasswordToSignupViewController: UIViewController {
     }
     
     @IBAction func nextButtonDidTap(_ sender: Any) {
-        guard let signinVC = self.storyboard?.instantiateViewController(withIdentifier: "SigninViewController") as? SigninViewController else { return }
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
         
-        signinVC.modalPresentationStyle = .fullScreen
+        welcomeVC.modalPresentationStyle = .fullScreen
         // 회원가입(1)에서 받아온 사용자 id를 로그인 완료 VC로 전달
-        signinVC.userId = userId
+        welcomeVC.userId = userId
         
-        self.present(signinVC, animated: true, completion: nil)
+        self.present(welcomeVC, animated: true, completion: nil)
     }
     
 }

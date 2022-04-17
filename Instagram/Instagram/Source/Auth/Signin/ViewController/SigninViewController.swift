@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SigninViewController.swift
 //  Instagram
 //
 //  Created by 변주현 on 2022/04/07.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SigninViewController: UIViewController {
 
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -53,14 +53,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signinButtonDidTap(_ sender: Any) {
-        guard let successVC = self.storyboard?.instantiateViewController(withIdentifier: "SigninViewController") as? SigninViewController else { return }
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
         
-        successVC.modalPresentationStyle = .fullScreen
+        welcomeVC.modalPresentationStyle = .fullScreen
         
         // 로그인 완료 VC로 사용자 id 전달
-        successVC.userId = idTextField.text
+        welcomeVC.userId = idTextField.text
         
-        self.present(successVC, animated: true, completion: nil)
+        self.present(welcomeVC, animated: true, completion: nil)
     }
     
     @IBAction func signupButtonDidTap(_ sender: Any) {
