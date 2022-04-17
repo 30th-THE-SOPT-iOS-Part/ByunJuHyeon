@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signin View Controller-->
+        <scene sceneID="DyY-cT-ymk">
+            <objects>
+                <viewController storyboardIdentifier="SigninViewController" id="meG-ku-enH" customClass="SigninViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CTt-3b-Ytd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000님 Instagram에 오신 것을 환영합니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-1U-wLT">
+                                <rect key="frame" x="50" y="304" width="314" height="61"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYG-5V-xK8">
+                                <rect key="frame" x="38" y="385" width="338" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBR-z1-gBi">
+                                <rect key="frame" x="30" y="421" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jrd-Na-ORT"/>
+                                </constraints>
+                                <color key="tintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="완료하기"/>
+                                <connections>
+                                    <action selector="okButtonDidTap:" destination="meG-ku-enH" eventType="touchUpInside" id="V21-jP-bUp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hKT-yp-PNv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ucb-1U-wLT" firstAttribute="top" secondItem="hKT-yp-PNv" secondAttribute="top" constant="260" id="263-Pd-swD"/>
+                            <constraint firstItem="nBR-z1-gBi" firstAttribute="leading" secondItem="hKT-yp-PNv" secondAttribute="leading" constant="30" id="Alh-qi-HYC"/>
+                            <constraint firstAttribute="trailing" secondItem="Ucb-1U-wLT" secondAttribute="trailing" constant="50" id="bMC-Zx-2vz"/>
+                            <constraint firstItem="hKT-yp-PNv" firstAttribute="trailing" secondItem="fYG-5V-xK8" secondAttribute="trailing" constant="38" id="dxI-GW-Ti2"/>
+                            <constraint firstItem="Ucb-1U-wLT" firstAttribute="leading" secondItem="CTt-3b-Ytd" secondAttribute="leading" constant="50" id="hjP-Xy-FzE"/>
+                            <constraint firstItem="hKT-yp-PNv" firstAttribute="trailing" secondItem="nBR-z1-gBi" secondAttribute="trailing" constant="30" id="kh9-CX-s2t"/>
+                            <constraint firstItem="fYG-5V-xK8" firstAttribute="leading" secondItem="hKT-yp-PNv" secondAttribute="leading" constant="38" id="ly1-lY-KQH"/>
+                            <constraint firstItem="nBR-z1-gBi" firstAttribute="top" secondItem="fYG-5V-xK8" secondAttribute="bottom" constant="20" id="sul-ne-qgW"/>
+                            <constraint firstItem="fYG-5V-xK8" firstAttribute="top" secondItem="Ucb-1U-wLT" secondAttribute="bottom" constant="20" id="y2z-ZA-rG6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="Ucb-1U-wLT" id="w0b-bt-YrM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ha-6S-yPA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4149.6000000000004" y="105.66502463054188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
