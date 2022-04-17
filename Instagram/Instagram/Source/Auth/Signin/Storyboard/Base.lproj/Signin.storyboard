@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Instagram Black Logo" translatesAutoresizingMaskIntoConstraints="NO" id="2Gd-t5-meK">
-                                <rect key="frame" x="100" y="214" width="175" height="50"/>
+                                <rect key="frame" x="100" y="170" width="175" height="50"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="p8I-5u-Cdk">
-                                <rect key="frame" x="16" y="298" width="343" height="132"/>
+                                <rect key="frame" x="16" y="254" width="343" height="132"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호, 사용자 이름 또는 이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="f40-xy-ZJ1">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
@@ -51,7 +51,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AD1-LK-7PG">
-                                <rect key="frame" x="16" y="463" width="343" height="44"/>
+                                <rect key="frame" x="16" y="419" width="343" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="pTg-fR-52a"/>
                                 </constraints>
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeP-b2-CwM">
-                                <rect key="frame" x="97.333333333333329" y="543" width="180.66666666666669" height="17"/>
+                                <rect key="frame" x="97.333333333333329" y="499" width="180.66666666666669" height="17"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="계정이 없으신가요?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9i-5f-QwL">
                                         <rect key="frame" x="0.0" y="0.0" width="108" height="17"/>
@@ -88,7 +88,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFr-1J-5PQ">
-                                <rect key="frame" x="315" y="358" width="44" height="34"/>
+                                <rect key="frame" x="315" y="314" width="44" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="password hidden eye icon"/>
                                 <connections>
@@ -99,19 +99,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2Gd-t5-meK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="51o-TT-wmc"/>
-                            <constraint firstAttribute="trailing" secondItem="AD1-LK-7PG" secondAttribute="trailing" constant="16" id="DGQ-kh-BZZ"/>
+                            <constraint firstItem="2Gd-t5-meK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="51o-TT-wmc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AD1-LK-7PG" secondAttribute="trailing" constant="16" id="DGQ-kh-BZZ"/>
                             <constraint firstItem="p8I-5u-Cdk" firstAttribute="trailing" secondItem="CFr-1J-5PQ" secondAttribute="trailing" id="Dus-sP-6gN"/>
-                            <constraint firstItem="p8I-5u-Cdk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="KNS-HP-k1O"/>
-                            <constraint firstAttribute="trailing" secondItem="p8I-5u-Cdk" secondAttribute="trailing" constant="16" id="NXb-YT-M4K"/>
+                            <constraint firstItem="p8I-5u-Cdk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KNS-HP-k1O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p8I-5u-Cdk" secondAttribute="trailing" constant="16" id="NXb-YT-M4K"/>
                             <constraint firstItem="eeP-b2-CwM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RZz-ID-o7z"/>
                             <constraint firstItem="CFr-1J-5PQ" firstAttribute="top" secondItem="p8I-5u-Cdk" secondAttribute="top" constant="60" id="UuZ-A5-6i4"/>
-                            <constraint firstItem="AD1-LK-7PG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="VeB-HB-fMl"/>
-                            <constraint firstAttribute="trailing" secondItem="2Gd-t5-meK" secondAttribute="trailing" constant="100" id="Woa-am-SlT"/>
+                            <constraint firstItem="AD1-LK-7PG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VeB-HB-fMl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Gd-t5-meK" secondAttribute="trailing" constant="100" id="Woa-am-SlT"/>
                             <constraint firstItem="p8I-5u-Cdk" firstAttribute="top" secondItem="2Gd-t5-meK" secondAttribute="bottom" constant="34" id="ZKO-8M-O7E"/>
                             <constraint firstItem="eeP-b2-CwM" firstAttribute="top" secondItem="AD1-LK-7PG" secondAttribute="bottom" constant="36" id="Zl0-5k-yet"/>
                             <constraint firstItem="AD1-LK-7PG" firstAttribute="top" secondItem="p8I-5u-Cdk" secondAttribute="bottom" constant="33" id="egp-Vf-Cjr"/>
-                            <constraint firstItem="2Gd-t5-meK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="214" id="hf6-AR-LM0"/>
+                            <constraint firstItem="2Gd-t5-meK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="170" id="hf6-AR-LM0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jK2-M7-igC"/>
