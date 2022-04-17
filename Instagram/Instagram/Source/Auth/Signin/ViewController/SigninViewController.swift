@@ -46,7 +46,7 @@ class SigninViewController: UIViewController {
         // eyeButton isSelected 값 반전
         passwordEyeButton.isSelected.toggle()
         // 버튼 선택 유무에 따른 눈 모양 이미지 변경
-        let eyeImage = passwordEyeButton.isSelected ? "password shown eye icon" : "password hidden eye icon"
+        let eyeImage = passwordEyeButton.isSelected ? "icn_password_shown" : "icn_password_hidden"
         passwordEyeButton.setImage(UIImage(named: eyeImage), for: .normal)
         // 선택 시 틴트 컬러를 투명으로 변경해줌
         passwordEyeButton.tintColor = .clear

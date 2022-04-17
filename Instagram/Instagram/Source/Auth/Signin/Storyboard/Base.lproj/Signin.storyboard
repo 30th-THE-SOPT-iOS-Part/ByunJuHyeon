@@ -90,7 +90,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFr-1J-5PQ">
                                 <rect key="frame" x="315" y="314" width="44" height="34"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="password hidden eye icon"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icn_password_hidden"/>
                                 <connections>
                                     <action selector="passwordEyeButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vi6-KH-zU7"/>
                                 </connections>
@@ -162,7 +162,7 @@
     </scenes>
     <resources>
         <image name="Instagram Black Logo" width="175" height="50"/>
-        <image name="password hidden eye icon" width="20" height="20"/>
+        <image name="icn_password_hidden" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
