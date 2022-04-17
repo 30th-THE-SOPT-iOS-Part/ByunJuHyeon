@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XwX-u3-R5l">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -10,7 +10,7 @@
         <scene sceneID="XfT-LU-GWT">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="FeedTabViewController" storyboardName="Feed" referencedIdentifier="FeedTabViewController" id="hHF-SX-DjZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zqo-Wu-0sl"/>
+                    <tabBarItem key="tabBarItem" title="" image="icn_home" selectedImage="icn_home_selected" id="zqo-Wu-0sl"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPb-nW-wwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -20,7 +20,7 @@
         <scene sceneID="TwG-e8-HfV">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="SearchTabViewController" storyboardName="Search" referencedIdentifier="SearchTabViewController" id="NKB-XD-ULJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="eVG-Rk-ATs"/>
+                    <tabBarItem key="tabBarItem" title="" image="icn_search" selectedImage="icn_search_selected" id="eVG-Rk-ATs"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VS9-cC-fgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,7 +30,7 @@
         <scene sceneID="gds-7Z-yMj">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="ReelsTabViewController" storyboardName="Reels" referencedIdentifier="ReelsTabViewController" id="4Bc-Gc-HeW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="goC-ww-DYK"/>
+                    <tabBarItem key="tabBarItem" title="" image="icn_reels" selectedImage="icn_reels_selected" id="goC-ww-DYK"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIT-2l-Umn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,7 +40,7 @@
         <scene sceneID="Gwf-L8-ixx">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="ShopTabViewController" storyboardName="Shop" referencedIdentifier="ShopTabViewController" id="Kgv-XF-Lag" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="UZJ-WT-hOp"/>
+                    <tabBarItem key="tabBarItem" title="" image="icn_shop" selectedImage="icn_shop_selected" id="UZJ-WT-hOp"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dst-1f-tOG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +50,7 @@
         <scene sceneID="SQn-NV-Ii9">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="MypageTabViewController" storyboardName="Mypage" referencedIdentifier="MypageTabViewController" id="oN7-Ta-Dc4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ngl-zX-yvm"/>
+                    <tabBarItem key="tabBarItem" title="" image="icn_profile" selectedImage="icn_profile_selected" id="ngl-zX-yvm"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eo7-2V-C3n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,7 +63,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BEU-XD-7dX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="hHF-SX-DjZ" kind="relationship" relationship="viewControllers" id="oNx-6L-lQk"/>
@@ -78,4 +77,16 @@
             <point key="canvasLocation" x="-916" y="-346"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icn_home" width="24" height="24"/>
+        <image name="icn_home_selected" width="24" height="24"/>
+        <image name="icn_profile" width="24" height="24"/>
+        <image name="icn_profile_selected" width="24" height="24"/>
+        <image name="icn_reels" width="24" height="24"/>
+        <image name="icn_reels_selected" width="26" height="26"/>
+        <image name="icn_search" width="24" height="24"/>
+        <image name="icn_search_selected" width="24" height="24"/>
+        <image name="icn_shop" width="24" height="24"/>
+        <image name="icn_shop_selected" width="24" height="24"/>
+    </resources>
 </document>

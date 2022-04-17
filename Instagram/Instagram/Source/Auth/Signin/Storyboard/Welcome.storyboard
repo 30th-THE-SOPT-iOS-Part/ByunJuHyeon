@@ -8,6 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--TabBarController-->
+        <scene sceneID="6J5-I2-V1r">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TabBarController" storyboardName="TabBar" referencedIdentifier="TabBarController" id="FZx-fB-r6F" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZl-ty-LWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4730" y="-21"/>
+        </scene>
         <!--Welcome View Controller-->
         <scene sceneID="DyY-cT-ymk">
             <objects>

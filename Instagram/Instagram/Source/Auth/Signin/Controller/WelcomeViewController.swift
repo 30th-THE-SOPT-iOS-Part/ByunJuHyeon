@@ -19,7 +19,10 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func okButtonDidTap(_ sender: Any) {
-        self.dismiss(animated: true)
+        guard let mainFeedVC = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
+        
+        mainFeedVC.modalPresentationStyle = .fullScreen
+        self.present(mainFeedVC, animated: true)
     }
     
     private func setWelcomeLabel() {
