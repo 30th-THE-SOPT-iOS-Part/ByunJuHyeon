@@ -105,11 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				84AFA326280BEF8F00765633 /* TabBar */,
-				84AFA315280BEDD700765633 /* Mypage */,
-				84AFA314280BEDD200765633 /* Shop */,
-				84AFA313280BEDB100765633 /* Reels */,
-				84AFA312280BEDA300765633 /* Search */,
-				84AFA30D280BE9AB00765633 /* Feed */,
 				84AFA2F8280BBD2C00765633 /* Auth */,
 			);
 			path = Source;
@@ -217,26 +212,15 @@
 		84AFA326280BEF8F00765633 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				84AFA32C280BF08600765633 /* Controller */,
-				84AFA32B280BF07600765633 /* Storyboard */,
+				84AFA310280BED8000765633 /* TabBarController.swift */,
+				84AFA30E280BECC700765633 /* TabBar.storyboard */,
+				84AFA315280BEDD700765633 /* Mypage */,
+				84AFA314280BEDD200765633 /* Shop */,
+				84AFA313280BEDB100765633 /* Reels */,
+				84AFA312280BEDA300765633 /* Search */,
+				84AFA30D280BE9AB00765633 /* Feed */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		84AFA32B280BF07600765633 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				84AFA30E280BECC700765633 /* TabBar.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		84AFA32C280BF08600765633 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				84AFA310280BED8000765633 /* TabBarController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		84AFA32D280BF09700765633 /* Storyboard */ = {
