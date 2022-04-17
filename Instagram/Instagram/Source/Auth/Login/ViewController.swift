@@ -22,22 +22,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setTextFieldOption()
         addActionToTextField()
     }
     
     private func resetTextField() {
         idTextField.text?.removeAll()
         passwordTextField.text?.removeAll()
-    }
-    
-    private func setTextFieldOption() {
-        // 비밀번호 입력 시 보안처리
-        passwordTextField.isSecureTextEntry = true
-        // TextField에 입력하면 Clear 버튼이 나오도록 표시
-        idTextField.clearButtonMode = .whileEditing
-        // 눈 아이콘을 위해 주석 처리함
-        // passwordTextField.clearButtonMode = .whileEditing
     }
     
     private func addActionToTextField() {

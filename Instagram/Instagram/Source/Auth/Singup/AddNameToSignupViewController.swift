@@ -16,13 +16,7 @@ class AddNameToSignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setTextFieldOption()
         addActionToTextField()
-    }
-    
-    private func setTextFieldOption() {
-        // TextField에 입력하면 Clear 버튼이 나오도록 표시
-        idTextField.clearButtonMode = .whileEditing
     }
     
     private func addActionToTextField() {
