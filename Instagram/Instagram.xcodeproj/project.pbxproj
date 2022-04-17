@@ -43,6 +43,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84AFA2F5280BBB9D00765633 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA2F7280BBCDB00765633 /* Storyboard */,
+				84D00AFD27FE12CE00AEDEFA /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84AFA2F6280BBBBB00765633 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				84D00AF627FE12CD00AEDEFA /* SceneDelegate.swift */,
+				84D00AF427FE12CD00AEDEFA /* AppDelegate.swift */,
+				84D00B0227FE12CE00AEDEFA /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		84AFA2F7280BBCDB00765633 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84D00AFF27FE12CE00AEDEFA /* LaunchScreen.storyboard */,
+				84D00AFA27FE12CD00AEDEFA /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84AFA2F8280BBD2C00765633 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				84D00AF827FE12CD00AEDEFA /* ViewController.swift */,
+				84D00B0A27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift */,
+				84D00B0827FE1A7B00AEDEFA /* AddNameToSignupViewController.swift */,
+				84D00B0C27FE1C8400AEDEFA /* SigninViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		84AFA2F9280BBD5B00765633 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA2F8280BBD2C00765633 /* Auth */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		84D00AE827FE12CD00AEDEFA = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +109,9 @@
 		84D00AF327FE12CD00AEDEFA /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				84D00AF427FE12CD00AEDEFA /* AppDelegate.swift */,
-				84D00AF627FE12CD00AEDEFA /* SceneDelegate.swift */,
-				84D00AF827FE12CD00AEDEFA /* ViewController.swift */,
-				84D00AFA27FE12CD00AEDEFA /* Main.storyboard */,
-				84D00B0827FE1A7B00AEDEFA /* AddNameToSignupViewController.swift */,
-				84D00B0C27FE1C8400AEDEFA /* SigninViewController.swift */,
-				84D00B0A27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift */,
-				84D00AFD27FE12CE00AEDEFA /* Assets.xcassets */,
-				84D00AFF27FE12CE00AEDEFA /* LaunchScreen.storyboard */,
-				84D00B0227FE12CE00AEDEFA /* Info.plist */,
+				84AFA2F9280BBD5B00765633 /* Source */,
+				84AFA2F6280BBBBB00765633 /* Support */,
+				84AFA2F5280BBB9D00765633 /* Resource */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -301,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83B9Y749K7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Instagram/Info.plist;
+				INFOPLIST_FILE = Instagram/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83B9Y749K7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Instagram/Info.plist;
+				INFOPLIST_FILE = Instagram/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
