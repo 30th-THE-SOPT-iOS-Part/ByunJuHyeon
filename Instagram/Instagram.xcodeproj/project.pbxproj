@@ -10,6 +10,18 @@
 		84AFA2FE280BC3AD00765633 /* AddNameToSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */; };
 		84AFA301280BC52800765633 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA300280BC52800765633 /* Welcome.storyboard */; };
 		84AFA303280BC5EA00765633 /* AddPasswordToSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */; };
+		84AFA30F280BECC700765633 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA30E280BECC700765633 /* TabBar.storyboard */; };
+		84AFA311280BED8000765633 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFA310280BED8000765633 /* TabBarController.swift */; };
+		84AFA317280BEE8600765633 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA316280BEE8600765633 /* Search.storyboard */; };
+		84AFA319280BEE8D00765633 /* Reels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA318280BEE8D00765633 /* Reels.storyboard */; };
+		84AFA31B280BEE9400765633 /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA31A280BEE9400765633 /* Shop.storyboard */; };
+		84AFA31D280BEE9D00765633 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA31C280BEE9D00765633 /* Mypage.storyboard */; };
+		84AFA31F280BEF0100765633 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFA31E280BEF0100765633 /* SearchTabViewController.swift */; };
+		84AFA321280BEF3A00765633 /* ReelsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFA320280BEF3A00765633 /* ReelsTabViewController.swift */; };
+		84AFA323280BEF4300765633 /* ShopTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFA322280BEF4300765633 /* ShopTabViewController.swift */; };
+		84AFA325280BEF4F00765633 /* MypageTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFA324280BEF4F00765633 /* MypageTabViewController.swift */; };
+		84AFA328280BF01500765633 /* FeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFA327280BF01500765633 /* FeedTabViewController.swift */; };
+		84AFA32A280BF01C00765633 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA329280BF01C00765633 /* Feed.storyboard */; };
 		84D00AF527FE12CD00AEDEFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00AF427FE12CD00AEDEFA /* AppDelegate.swift */; };
 		84D00AF727FE12CD00AEDEFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00AF627FE12CD00AEDEFA /* SceneDelegate.swift */; };
 		84D00AF927FE12CD00AEDEFA /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00AF827FE12CD00AEDEFA /* SigninViewController.swift */; };
@@ -25,6 +37,18 @@
 		84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddNameToSignup.storyboard; sourceTree = "<group>"; };
 		84AFA300280BC52800765633 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPasswordToSignup.storyboard; sourceTree = "<group>"; };
+		84AFA30E280BECC700765633 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		84AFA310280BED8000765633 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		84AFA316280BEE8600765633 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		84AFA318280BEE8D00765633 /* Reels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reels.storyboard; sourceTree = "<group>"; };
+		84AFA31A280BEE9400765633 /* Shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
+		84AFA31C280BEE9D00765633 /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
+		84AFA31E280BEF0100765633 /* SearchTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
+		84AFA320280BEF3A00765633 /* ReelsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsTabViewController.swift; sourceTree = "<group>"; };
+		84AFA322280BEF4300765633 /* ShopTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTabViewController.swift; sourceTree = "<group>"; };
+		84AFA324280BEF4F00765633 /* MypageTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTabViewController.swift; sourceTree = "<group>"; };
+		84AFA327280BF01500765633 /* FeedTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTabViewController.swift; sourceTree = "<group>"; };
+		84AFA329280BF01C00765633 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		84D00AF127FE12CD00AEDEFA /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D00AF427FE12CD00AEDEFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D00AF627FE12CD00AEDEFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +104,11 @@
 		84AFA2F9280BBD5B00765633 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				84AFA326280BEF8F00765633 /* TabBar */,
+				84AFA315280BEDD700765633 /* Mypage */,
+				84AFA314280BEDD200765633 /* Shop */,
+				84AFA313280BEDB100765633 /* Reels */,
+				84AFA312280BEDA300765633 /* Search */,
 				84AFA30D280BE9AB00765633 /* Feed */,
 				84AFA2F8280BBD2C00765633 /* Auth */,
 			);
@@ -89,7 +118,7 @@
 		84AFA304280BC68400765633 /* Signin */ = {
 			isa = PBXGroup;
 			children = (
-				84AFA30B280BCE0B00765633 /* ViewController */,
+				84AFA30B280BCE0B00765633 /* Controller */,
 				84AFA30C280BCE1400765633 /* Storyboard */,
 			);
 			path = Signin;
@@ -98,7 +127,7 @@
 		84AFA306280BC6AB00765633 /* Singup */ = {
 			isa = PBXGroup;
 			children = (
-				84AFA308280BCD9B00765633 /* ViewController */,
+				84AFA308280BCD9B00765633 /* Controller */,
 				84AFA307280BCD8B00765633 /* Storyboard */,
 			);
 			path = Singup;
@@ -113,22 +142,22 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		84AFA308280BCD9B00765633 /* ViewController */ = {
+		84AFA308280BCD9B00765633 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				84D00B0A27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift */,
 				84D00B0827FE1A7B00AEDEFA /* AddNameToSignupViewController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		84AFA30B280BCE0B00765633 /* ViewController */ = {
+		84AFA30B280BCE0B00765633 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				84D00B0C27FE1C8400AEDEFA /* WelcomeViewController.swift */,
 				84D00AF827FE12CD00AEDEFA /* SigninViewController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		84AFA30C280BCE1400765633 /* Storyboard */ = {
@@ -143,8 +172,151 @@
 		84AFA30D280BE9AB00765633 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				84AFA336280BF0F700765633 /* Controller */,
+				84AFA335280BF0F000765633 /* Storyboard */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		84AFA312280BEDA300765633 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA334280BF0E800765633 /* Controller */,
+				84AFA333280BF0E100765633 /* Storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		84AFA313280BEDB100765633 /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA332280BF0D800765633 /* Controller */,
+				84AFA331280BF0D100765633 /* Storyboard */,
+			);
+			path = Reels;
+			sourceTree = "<group>";
+		};
+		84AFA314280BEDD200765633 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA330280BF0BC00765633 /* Controller */,
+				84AFA32F280BF0AD00765633 /* Storyboard */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		84AFA315280BEDD700765633 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA32E280BF0A100765633 /* Controller */,
+				84AFA32D280BF09700765633 /* Storyboard */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		84AFA326280BEF8F00765633 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA32C280BF08600765633 /* Controller */,
+				84AFA32B280BF07600765633 /* Storyboard */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		84AFA32B280BF07600765633 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA30E280BECC700765633 /* TabBar.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84AFA32C280BF08600765633 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA310280BED8000765633 /* TabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84AFA32D280BF09700765633 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA31C280BEE9D00765633 /* Mypage.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84AFA32E280BF0A100765633 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA324280BEF4F00765633 /* MypageTabViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84AFA32F280BF0AD00765633 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA31A280BEE9400765633 /* Shop.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84AFA330280BF0BC00765633 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA322280BEF4300765633 /* ShopTabViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84AFA331280BF0D100765633 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA318280BEE8D00765633 /* Reels.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84AFA332280BF0D800765633 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA320280BEF3A00765633 /* ReelsTabViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84AFA333280BF0E100765633 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA316280BEE8600765633 /* Search.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84AFA334280BF0E800765633 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA31E280BEF0100765633 /* SearchTabViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84AFA335280BF0F000765633 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA329280BF01C00765633 /* Feed.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84AFA336280BF0F700765633 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA327280BF01500765633 /* FeedTabViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		84D00AE827FE12CD00AEDEFA = {
@@ -232,10 +404,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				84AFA301280BC52800765633 /* Welcome.storyboard in Resources */,
+				84AFA30F280BECC700765633 /* TabBar.storyboard in Resources */,
+				84AFA32A280BF01C00765633 /* Feed.storyboard in Resources */,
 				84AFA2FE280BC3AD00765633 /* AddNameToSignup.storyboard in Resources */,
 				84D00B0127FE12CE00AEDEFA /* LaunchScreen.storyboard in Resources */,
+				84AFA31D280BEE9D00765633 /* Mypage.storyboard in Resources */,
 				84D00AFE27FE12CE00AEDEFA /* Assets.xcassets in Resources */,
 				84AFA303280BC5EA00765633 /* AddPasswordToSignup.storyboard in Resources */,
+				84AFA31B280BEE9400765633 /* Shop.storyboard in Resources */,
+				84AFA317280BEE8600765633 /* Search.storyboard in Resources */,
+				84AFA319280BEE8D00765633 /* Reels.storyboard in Resources */,
 				84D00AFC27FE12CD00AEDEFA /* Signin.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,11 +425,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AFA321280BEF3A00765633 /* ReelsTabViewController.swift in Sources */,
 				84D00B0927FE1A7C00AEDEFA /* AddNameToSignupViewController.swift in Sources */,
 				84D00AF927FE12CD00AEDEFA /* SigninViewController.swift in Sources */,
 				84D00AF527FE12CD00AEDEFA /* AppDelegate.swift in Sources */,
 				84D00AF727FE12CD00AEDEFA /* SceneDelegate.swift in Sources */,
+				84AFA325280BEF4F00765633 /* MypageTabViewController.swift in Sources */,
+				84AFA31F280BEF0100765633 /* SearchTabViewController.swift in Sources */,
+				84AFA323280BEF4300765633 /* ShopTabViewController.swift in Sources */,
 				84D00B0D27FE1C8400AEDEFA /* WelcomeViewController.swift in Sources */,
+				84AFA311280BED8000765633 /* TabBarController.swift in Sources */,
+				84AFA328280BF01500765633 /* FeedTabViewController.swift in Sources */,
 				84D00B0B27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
