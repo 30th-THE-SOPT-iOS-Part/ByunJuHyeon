@@ -80,6 +80,7 @@
 		84AFA2F9280BBD5B00765633 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				84AFA30D280BE9AB00765633 /* Feed */,
 				84AFA2F8280BBD2C00765633 /* Auth */,
 			);
 			path = Source;
@@ -137,6 +138,13 @@
 				84AFA300280BC52800765633 /* Welcome.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84AFA30D280BE9AB00765633 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		84D00AE827FE12CD00AEDEFA = {

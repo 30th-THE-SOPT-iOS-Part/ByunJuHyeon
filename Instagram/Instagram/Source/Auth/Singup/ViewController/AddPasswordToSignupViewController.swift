@@ -40,6 +40,7 @@ class AddPasswordToSignupViewController: UIViewController {
         welcomeVC.userId = userId
         
         self.present(welcomeVC, animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
 }

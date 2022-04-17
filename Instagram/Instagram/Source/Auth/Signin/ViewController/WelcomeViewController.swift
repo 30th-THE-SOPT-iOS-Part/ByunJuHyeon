@@ -19,13 +19,7 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func okButtonDidTap(_ sender: Any) {
-        let presentingVC = self.presentingViewController!
-        let navigationController = presentingVC is UINavigationController ? presentingVC as? UINavigationController : presentingVC.navigationController
-        
-        self.dismiss(animated: true){
-            navigationController?.popToRootViewController(animated: true)
-            return
-        }
+        self.dismiss(animated: true)
     }
     
     private func setWelcomeLabel() {
@@ -34,5 +28,9 @@ class WelcomeViewController: UIViewController {
              welcomeLabel.sizeToFit()
          }
      }
+    
+    @IBAction func reloginButtonDidTap(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
     
 }
