@@ -19,11 +19,10 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func okButtonDidTap(_ sender: Any) {
-        guard let mainFeedVC = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
+        guard let tabBarController = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
         
-        mainFeedVC.modalPresentationStyle = .fullScreen
-        self.present(mainFeedVC, animated: true)
-    }
+        self.view.window?.rootViewController = tabBarController;
+    } 
     
     private func setWelcomeLabel() {
          if let userId = userId {
