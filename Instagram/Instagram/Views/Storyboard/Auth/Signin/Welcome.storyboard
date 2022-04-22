@@ -11,8 +11,8 @@
         <!--TabBarController-->
         <scene sceneID="6J5-I2-V1r">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TabBarController" storyboardName="TabBar" referencedIdentifier="TabBarController" id="FZx-fB-r6F" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZl-ty-LWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="TabBarController" storyboardName="TabBar" referencedIdentifier="TabBarController" id="FZx-fB-r6F" sceneMemberID="viewController"/>
             </objects>
             <point key="canvasLocation" x="4730" y="-21"/>
         </scene>
@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mh0-Xd-trj">
-                                <rect key="frame" x="35" y="354" width="344" height="152"/>
+                                <rect key="frame" x="35" y="310" width="344" height="152"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000님 Instagram에 오신 것을 환영합니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-1U-wLT">
                                         <rect key="frame" x="0.0" y="0.0" width="344" height="57.5"/>
@@ -54,7 +54,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAO-nZ-GRU">
-                                <rect key="frame" x="114" y="524" width="186" height="31"/>
+                                <rect key="frame" x="124.5" y="480" width="165" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="다른 계정으로 로그인하기">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -68,10 +68,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IAO-nZ-GRU" firstAttribute="top" secondItem="Mh0-Xd-trj" secondAttribute="bottom" constant="18" id="XWP-Wd-8k6"/>
-                            <constraint firstItem="IAO-nZ-GRU" firstAttribute="leading" secondItem="hKT-yp-PNv" secondAttribute="leading" constant="114" id="c9A-lN-C8m"/>
                             <constraint firstItem="Mh0-Xd-trj" firstAttribute="leading" secondItem="hKT-yp-PNv" secondAttribute="leading" constant="35" id="fds-Og-gzi"/>
-                            <constraint firstItem="Mh0-Xd-trj" firstAttribute="top" secondItem="CTt-3b-Ytd" secondAttribute="top" constant="354" id="fwb-ec-JvU"/>
-                            <constraint firstItem="hKT-yp-PNv" firstAttribute="trailing" secondItem="IAO-nZ-GRU" secondAttribute="trailing" constant="114" id="jxt-KS-wNg"/>
+                            <constraint firstItem="Mh0-Xd-trj" firstAttribute="top" secondItem="CTt-3b-Ytd" secondAttribute="top" constant="310" id="fwb-ec-JvU"/>
+                            <constraint firstItem="IAO-nZ-GRU" firstAttribute="centerX" secondItem="CTt-3b-Ytd" secondAttribute="centerX" id="qIR-4q-lc7"/>
                             <constraint firstItem="hKT-yp-PNv" firstAttribute="trailing" secondItem="Mh0-Xd-trj" secondAttribute="trailing" constant="35" id="yjV-up-Iut"/>
                         </constraints>
                     </view>
