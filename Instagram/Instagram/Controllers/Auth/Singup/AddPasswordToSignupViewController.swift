@@ -8,17 +8,22 @@
 import UIKit
 
 class AddPasswordToSignupViewController: UIViewController {
-
+    
+    // MARK: - Properties
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     var userId: String?
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         addActionToTextField()
     }
-    
+}
+
+// MARK: - Custom Methods
+extension AddPasswordToSignupViewController {
     private func addActionToTextField() {
         // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
         self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
@@ -27,7 +32,11 @@ class AddPasswordToSignupViewController: UIViewController {
     @objc func textFieldDidChange(sender: UITextField) {
         self.nextButton.isEnabled = sender.hasText
     }
+    
+}
 
+// MARK: - IBAction
+extension AddPasswordToSignupViewController {
     @IBAction func backButtonDidTap(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -42,5 +51,4 @@ class AddPasswordToSignupViewController: UIViewController {
         self.present(welcomeVC, animated: true, completion: nil)
         self.navigationController?.popToRootViewController(animated: true)
     }
-    
 }

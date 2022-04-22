@@ -9,16 +9,21 @@ import UIKit
 
 class AddNameToSignupViewController: UIViewController {
 
+    // MARK: - Properties
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     var userName: String?
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addActionToTextField()
     }
-    
+}
+
+// MARK: - Private Methods
+extension AddNameToSignupViewController {
     private func addActionToTextField() {
         // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
         self.idTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
@@ -27,7 +32,10 @@ class AddNameToSignupViewController: UIViewController {
     @objc func textFieldDidChange(sender: UITextField) {
         self.nextButton.isEnabled = sender.hasText
     }
-    
+}
+
+// MARK: - IBAction
+extension AddNameToSignupViewController {
     @IBAction func backButtonDidTap(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -40,5 +48,4 @@ class AddNameToSignupViewController: UIViewController {
         
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
-    
 }

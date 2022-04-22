@@ -9,18 +9,22 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setDelegate()
     }
-    
+}
+
+// MARK: - Private Methods
+extension TabBarController {
     private func setDelegate() {
         self.delegate = self
     }
-    
 }
 
+// MARK: - UITabBarControllerDelegate
 extension TabBarController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if selectedIndex == 2 {

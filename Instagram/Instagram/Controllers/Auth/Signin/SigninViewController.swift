@@ -8,12 +8,14 @@
 import UIKit
 
 class SigninViewController: UIViewController {
-
+    
+    // MARK: - Properties
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signinButton: UIButton!
     @IBOutlet weak var passwordEyeButton: UIButton!
     
+    // MARK: - Life Cycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         resetTextField()
@@ -25,7 +27,10 @@ class SigninViewController: UIViewController {
         
         addActionToTextField()
     }
-    
+}
+
+// MARK: - Private Methods
+extension SigninViewController {
     private func resetTextField() {
         idTextField.text?.removeAll()
         passwordTextField.text?.removeAll()
@@ -44,7 +49,10 @@ class SigninViewController: UIViewController {
     @objc func textFieldDidChange(sender: UITextField) {
         self.signinButton.isEnabled = (idTextField.hasText && passwordTextField.hasText)
     }
-    
+}
+
+// MARK: - IBAction
+extension SigninViewController {
     @IBAction func passwordEyeButtonDidTap(_ sender: Any) {
         // textField에 대한 처리를 true -> false || false -> true
         passwordTextField.isSecureTextEntry.toggle()
@@ -56,7 +64,7 @@ class SigninViewController: UIViewController {
         // 선택 시 틴트 컬러를 투명으로 변경해줌
         passwordEyeButton.tintColor = .clear
     }
-
+    
     @IBAction func signinButtonDidTap(_ sender: Any) {
         guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
         
@@ -71,7 +79,6 @@ class SigninViewController: UIViewController {
     @IBAction func signupButtonDidTap(_ sender: Any) {
         guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "AddNameToSignupViewController") as? AddNameToSignupViewController else { return }
         
-            self.navigationController?.pushViewController(signupVC, animated: true)
+        self.navigationController?.pushViewController(signupVC, animated: true)
     }
-
 }
