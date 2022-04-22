@@ -19,7 +19,7 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func okButtonDidTap(_ sender: Any) {
-        guard let tabBarController = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
+        guard let tabBarController = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
         
         self.view.window?.rootViewController = tabBarController
     } 
