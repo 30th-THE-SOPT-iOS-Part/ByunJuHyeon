@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarController: UITabBarController, UITabBarControllerDelegate {
+class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +25,10 @@ extension TabBarController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if selectedIndex == 2 {
             tabBar.backgroundColor = .black
-            tabBar.barTintColor = .white
             tabBar.tintColor = .white
             tabBar.unselectedItemTintColor = .white
         } else {
             tabBar.backgroundColor = .white
-            tabBar.barTintColor = .black
             tabBar.tintColor = .black
             tabBar.unselectedItemTintColor = .black
         }
