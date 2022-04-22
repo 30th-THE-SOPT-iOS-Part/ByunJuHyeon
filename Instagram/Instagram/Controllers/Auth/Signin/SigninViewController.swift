@@ -17,6 +17,7 @@ class SigninViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         resetTextField()
+        resetButton()
     }
     
     override func viewDidLoad() {
@@ -28,6 +29,10 @@ class SigninViewController: UIViewController {
     private func resetTextField() {
         idTextField.text?.removeAll()
         passwordTextField.text?.removeAll()
+    }
+    
+    private func resetButton() {
+        signinButton.isEnabled = false
     }
     
     private func addActionToTextField() {
