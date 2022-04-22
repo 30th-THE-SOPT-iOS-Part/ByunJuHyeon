@@ -22,7 +22,7 @@ class AddNameToSignupViewController: UIViewController {
     }
 }
 
-// MARK: - Private Methods
+// MARK: - Custom Methods
 extension AddNameToSignupViewController {
     private func addActionToTextField() {
         // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
@@ -32,10 +32,8 @@ extension AddNameToSignupViewController {
     @objc func textFieldDidChange(sender: UITextField) {
         self.nextButton.isEnabled = sender.hasText
     }
-}
-
-// MARK: - IBAction
-extension AddNameToSignupViewController {
+    
+    // MARK: IBAction
     @IBAction func backButtonDidTap(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }

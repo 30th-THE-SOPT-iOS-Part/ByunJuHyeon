@@ -17,7 +17,7 @@ class TabBarController: UITabBarController {
     }
 }
 
-// MARK: - Private Methods
+// MARK: - Custom Methods
 extension TabBarController {
     private func setDelegate() {
         self.delegate = self

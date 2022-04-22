@@ -33,10 +33,7 @@ extension AddPasswordToSignupViewController {
         self.nextButton.isEnabled = sender.hasText
     }
     
-}
-
-// MARK: - IBAction
-extension AddPasswordToSignupViewController {
+    // MARK: IBAction
     @IBAction func backButtonDidTap(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }

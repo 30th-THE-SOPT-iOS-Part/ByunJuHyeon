@@ -29,7 +29,7 @@ class SigninViewController: UIViewController {
     }
 }
 
-// MARK: - Private Methods
+// MARK: - Custom Methods
 extension SigninViewController {
     private func resetTextField() {
         idTextField.text?.removeAll()
@@ -49,10 +49,8 @@ extension SigninViewController {
     @objc func textFieldDidChange(sender: UITextField) {
         self.signinButton.isEnabled = (idTextField.hasText && passwordTextField.hasText)
     }
-}
-
-// MARK: - IBAction
-extension SigninViewController {
+    
+    // MARK: IBAction
     @IBAction func passwordEyeButtonDidTap(_ sender: Any) {
         // textField에 대한 처리를 true -> false || false -> true
         passwordTextField.isSecureTextEntry.toggle()
