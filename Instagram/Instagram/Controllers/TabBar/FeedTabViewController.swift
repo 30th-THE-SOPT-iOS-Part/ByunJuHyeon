@@ -26,7 +26,7 @@ class FeedTabViewController: UIViewController {
         collectionView.dataSource = self
         
         collectionView.register(collectionViewNib, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
-        collectionView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 8 + 72 + 8)
+        collectionView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 4 + 72 + 4)
         collectionView.showsHorizontalScrollIndicator = false
         
         return collectionView
