@@ -64,7 +64,7 @@ extension SigninViewController {
     }
     
     @IBAction func signinButtonDidTap(_ sender: Any) {
-        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else { return }
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: WelcomeViewController.className) as? WelcomeViewController else { return }
         
         welcomeVC.modalPresentationStyle = .fullScreen
         
@@ -75,7 +75,7 @@ extension SigninViewController {
     }
     
     @IBAction func signupButtonDidTap(_ sender: Any) {
-        guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "AddNameToSignupViewController") as? AddNameToSignupViewController else { return }
+        guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: AddNameToSignupViewController.className) as? AddNameToSignupViewController else { return }
         
         self.navigationController?.pushViewController(signupVC, animated: true)
     }

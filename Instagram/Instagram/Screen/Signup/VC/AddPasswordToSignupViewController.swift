@@ -1,5 +1,5 @@
 //
-//  AddNameToSignupViewController.swift
+//  AddPasswordToSignupViewController.swift
 //  Instagram
 //
 //  Created by 변주현 on 2022/04/07.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class AddNameToSignupViewController: UIViewController {
-
+class AddPasswordToSignupViewController: UIViewController {
+    
     // MARK: - IBOutlet
-    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
     // MARK: - Properties
-    var userName: String?
+    var userId: String?
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -25,10 +25,10 @@ class AddNameToSignupViewController: UIViewController {
 }
 
 // MARK: - Custom Methods
-extension AddNameToSignupViewController {
+extension AddPasswordToSignupViewController {
     private func addActionToTextField() {
         // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
-        self.idTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
     
     @objc func textFieldDidChange(sender: UITextField) {
@@ -41,11 +41,13 @@ extension AddNameToSignupViewController {
     }
     
     @IBAction func nextButtonDidTap(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "AddPasswordToSignupViewController") as? AddPasswordToSignupViewController else { return }
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: WelcomeViewController.className) as? WelcomeViewController else { return }
         
-        // 회원가입(2) VC로 사용자 이름 전달
-        nextVC.userId = idTextField.text
+        welcomeVC.modalPresentationStyle = .fullScreen
+        // 회원가입(1)에서 받아온 사용자 id를 로그인 완료 VC로 전달
+        welcomeVC.userId = userId
         
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        self.present(welcomeVC, animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }
