@@ -127,6 +127,7 @@ extension FeedTabViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.identifier, for: indexPath) as? PostTableViewCell else { return UITableViewCell() }
         
         cell.setData(postData: FeedPostDataModel.sampleData[indexPath.row])
+        cell.contentImage.contentMode = .scaleAspectFill
         
         cell.clickLikeDelegate = self
         
