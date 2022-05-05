@@ -35,8 +35,10 @@ class PostTableViewCell: UITableViewCell {
     //    override func setSelected(_ selected: Bool, animated: Bool) {
     //        super.setSelected(selected, animated: animated)
     //    }
-    
-    // MARK: - Custom Methods
+}
+
+// MARK: - Custom Methods
+extension PostTableViewCell {
     func setData(postData: FeedPostDataModel) {
         profileImage.image = UIImage(named: postData.profileImage)
         userNameLabel.text = postData.userName
@@ -47,7 +49,7 @@ class PostTableViewCell: UITableViewCell {
         commentInfoLabel.text = postData.commentInfo
     }
     
-    // MARK: - IBAction
+    // MARK: IBAction
     @IBAction func likeButtonDidTap(_ sender: UIButton) {
         likeButton.isSelected.toggle()
         if let clickLikeDelegate = clickLikeDelegate {
