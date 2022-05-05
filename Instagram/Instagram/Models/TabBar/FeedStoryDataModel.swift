@@ -16,14 +16,14 @@ struct FeedStoryDataModel {
 extension FeedStoryDataModel {
     static let sampleData: [FeedStoryDataModel] = [
         FeedStoryDataModel(profileImage: "avatar1", userName: "user1"),
-        FeedStoryDataModel(profileImage: "avatar1", userName: "user2"),
-        FeedStoryDataModel(profileImage: "avatar1", userName: "user2"),
-        FeedStoryDataModel(profileImage: "avatar1", userName: "user2"),
-        FeedStoryDataModel(profileImage: "avatar1", userName: "user2"),
-        FeedStoryDataModel(profileImage: "avatar1", userName: "user2"),
-        FeedStoryDataModel(profileImage: "avatar1", userName: "user2"),
-        FeedStoryDataModel(profileImage: "avatar1", userName: "user2"),
-        FeedStoryDataModel(profileImage: "avatar1", userName: "user3")
+        FeedStoryDataModel(profileImage: "avatar2", userName: "user2"),
+        FeedStoryDataModel(profileImage: "avatar3", userName: "user3"),
+        FeedStoryDataModel(profileImage: "avatar4", userName: "user4"),
+        FeedStoryDataModel(profileImage: "avatar5", userName: "user5"),
+        FeedStoryDataModel(profileImage: "avatar6", userName: "user6"),
+        FeedStoryDataModel(profileImage: "avatar1", userName: "user1"),
+        FeedStoryDataModel(profileImage: "avatar2", userName: "user2"),
+        FeedStoryDataModel(profileImage: "avatar3", userName: "user3")
     ]
 }
 

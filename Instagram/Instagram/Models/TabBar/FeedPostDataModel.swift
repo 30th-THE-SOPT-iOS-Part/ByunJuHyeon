@@ -25,9 +25,9 @@ struct FeedPostDataModel {
 // 더미데이터
 extension FeedPostDataModel {
     static let sampleData: [FeedPostDataModel] = [
-        FeedPostDataModel(profileImage: "avatar1", userName: "juhyeon", contentImage:"postImage1" ,content: "내용입니다", likeCount: 1, commentCount: 1),
-        FeedPostDataModel(profileImage: "avatar1", userName: "juhyeon", contentImage:"postImage1" ,content: "내용입니다", likeCount: 2, commentCount: 2),
-        FeedPostDataModel(profileImage: "avatar1", userName: "juhyeon", contentImage:"postImage1" ,content: "내용입니다", likeCount: 3, commentCount: 3),
-        FeedPostDataModel(profileImage: "avatar1", userName: "juhyeon", contentImage:"postImage1" ,content: "내용입니다", likeCount: 4, commentCount: 4)
+        FeedPostDataModel(profileImage: "avatar1", userName: "user1", contentImage:"postImage1" ,content: "내용입니다", likeCount: 1, commentCount: 1),
+        FeedPostDataModel(profileImage: "avatar2", userName: "user2", contentImage:"postImage2" ,content: "내용입니다", likeCount: 2, commentCount: 2),
+        FeedPostDataModel(profileImage: "avatar3", userName: "user3", contentImage:"postImage3" ,content: "내용입니다", likeCount: 3, commentCount: 3),
+        FeedPostDataModel(profileImage: "avatar4", userName: "user4", contentImage:"postImage4" ,content: "내용입니다", likeCount: 4, commentCount: 4)
         ]
 }
