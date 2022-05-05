@@ -9,7 +9,7 @@ import UIKit
 
 class SigninViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: - IBOutlet
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signinButton: UIButton!

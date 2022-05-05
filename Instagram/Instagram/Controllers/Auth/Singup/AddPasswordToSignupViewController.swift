@@ -9,9 +9,11 @@ import UIKit
 
 class AddPasswordToSignupViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: - IBOutlet
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
+    
+    // MARK: - Properties
     var userId: String?
     
     // MARK: - Life Cycle

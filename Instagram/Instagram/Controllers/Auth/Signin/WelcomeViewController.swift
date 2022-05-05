@@ -9,8 +9,10 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: - IBOutlet
     @IBOutlet weak var welcomeLabel: UILabel!
+    
+    // MARK: - Properties
     var userId: String?
     
     // MARK: - Life Cycle

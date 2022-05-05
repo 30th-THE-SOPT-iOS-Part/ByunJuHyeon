@@ -9,9 +9,10 @@ import UIKit
 
 class StoryCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - Properties
     static let identifier = "StoryCollectionViewCell"
 
-    // MARK: - Properties
+    // MARK: - IBOutlet
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
     
@@ -20,6 +21,7 @@ class StoryCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
 
+    // MARK: - Custom Methods
     func setData(storyData: FeedStoryDataModel) {
         profileImage.image = UIImage(named: storyData.profileImage)
         userName.text = storyData.userName

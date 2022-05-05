@@ -9,9 +9,11 @@ import UIKit
 
 class AddNameToSignupViewController: UIViewController {
 
-    // MARK: - Properties
+    // MARK: - IBOutlet
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
+    
+    // MARK: - Properties
     var userName: String?
     
     // MARK: - Life Cycle
