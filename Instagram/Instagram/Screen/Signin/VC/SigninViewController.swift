@@ -50,7 +50,7 @@ extension SigninViewController {
         self.signinButton.isEnabled = (idTextField.hasText && passwordTextField.hasText)
     }
     
-    func goToWelcomeVC(userId: String) {
+    private func goToWelcomeVC(userId: String) {
         guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: WelcomeViewController.className) as? WelcomeViewController else { return }
         
         welcomeVC.modalPresentationStyle = .fullScreen
