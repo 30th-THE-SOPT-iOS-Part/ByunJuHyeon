@@ -16,6 +16,9 @@
 		8453D4E92823C42900C1A775 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453D4E82823C42900C1A775 /* UIViewController+.swift */; };
 		84A1E442282A57AB005C034F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1E441282A57AB005C034F /* APIConstants.swift */; };
 		84A1E444282A5835005C034F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1E443282A5835005C034F /* NetworkResult.swift */; };
+		84A1E44A282A5D82005C034F /* SigninDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1E449282A5D82005C034F /* SigninDataModel.swift */; };
+		84A1E44E282A61CA005C034F /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1E44D282A61CA005C034F /* GenericResponse.swift */; };
+		84A1E451282A659C005C034F /* SignAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1E450282A659C005C034F /* SignAPI.swift */; };
 		84AFA2FE280BC3AD00765633 /* AddNameToSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */; };
 		84AFA301280BC52800765633 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA300280BC52800765633 /* Welcome.storyboard */; };
 		84AFA303280BC5EA00765633 /* AddPasswordToSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */; };
@@ -55,6 +58,9 @@
 		8453D4E82823C42900C1A775 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		84A1E441282A57AB005C034F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		84A1E443282A5835005C034F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		84A1E449282A5D82005C034F /* SigninDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninDataModel.swift; sourceTree = "<group>"; };
+		84A1E44D282A61CA005C034F /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		84A1E450282A659C005C034F /* SignAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAPI.swift; sourceTree = "<group>"; };
 		84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddNameToSignup.storyboard; sourceTree = "<group>"; };
 		84AFA300280BC52800765633 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPasswordToSignup.storyboard; sourceTree = "<group>"; };
@@ -232,7 +238,6 @@
 		8453D4F42823C62400C1A775 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				847F4A962812603100CA5E6D /* Model */,
 				8453D4F92823C69600C1A775 /* SB */,
 				8453D4F82823C69200C1A775 /* VC */,
 				8453D4F52823C63400C1A775 /* Cell */,
@@ -383,22 +388,66 @@
 			path = SB;
 			sourceTree = "<group>";
 		};
-		847F4A962812603100CA5E6D /* Model */ = {
+		847F4A962812603100CA5E6D /* APIModels */ = {
 			isa = PBXGroup;
 			children = (
-				84E9F4B1281EE20300EA2567 /* FeedStoryDataModel.swift */,
-				8453D4DA281FE70A00C1A775 /* FeedPostDataModel.swift */,
+				84A1E44F282A61F2005C034F /* Models */,
+				84A1E44D282A61CA005C034F /* GenericResponse.swift */,
 			);
-			path = Model;
+			path = APIModels;
 			sourceTree = "<group>";
 		};
 		84A1E440282A579B005C034F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				84A1E448282A5C89005C034F /* APIManagers */,
+				84A1E447282A5C6C005C034F /* APIEssentials */,
+				847F4A962812603100CA5E6D /* APIModels */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		84A1E445282A59A2005C034F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4B1281EE20300EA2567 /* FeedStoryDataModel.swift */,
+				8453D4DA281FE70A00C1A775 /* FeedPostDataModel.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		84A1E446282A59AA005C034F /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				84A1E449282A5D82005C034F /* SigninDataModel.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		84A1E447282A5C6C005C034F /* APIEssentials */ = {
+			isa = PBXGroup;
+			children = (
 				84A1E441282A57AB005C034F /* APIConstants.swift */,
 				84A1E443282A5835005C034F /* NetworkResult.swift */,
 			);
-			path = Network;
+			path = APIEssentials;
+			sourceTree = "<group>";
+		};
+		84A1E448282A5C89005C034F /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+				84A1E450282A659C005C034F /* SignAPI.swift */,
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		84A1E44F282A61F2005C034F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84A1E446282A59AA005C034F /* Sign */,
+				84A1E445282A59A2005C034F /* Feed */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		84AFA2F5280BBB9D00765633 /* Support */ = {
@@ -581,14 +630,17 @@
 				84E9F4BD281EF04D00EA2567 /* StoryCollectionViewCell.swift in Sources */,
 				84D00AF927FE12CD00AEDEFA /* SigninViewController.swift in Sources */,
 				84D00AF527FE12CD00AEDEFA /* AppDelegate.swift in Sources */,
+				84A1E44E282A61CA005C034F /* GenericResponse.swift in Sources */,
 				84D00AF727FE12CD00AEDEFA /* SceneDelegate.swift in Sources */,
 				84A1E444282A5835005C034F /* NetworkResult.swift in Sources */,
 				8453D4E72823C3FC00C1A775 /* UIView+.swift in Sources */,
 				8453D4DB281FE70A00C1A775 /* FeedPostDataModel.swift in Sources */,
 				84AFA325280BEF4F00765633 /* MypageTabViewController.swift in Sources */,
+				84A1E451282A659C005C034F /* SignAPI.swift in Sources */,
 				8453D4E228229A5A00C1A775 /* SendUpdateStatusDelegate.swift in Sources */,
 				84AFA31F280BEF0100765633 /* SearchTabViewController.swift in Sources */,
 				84AFA323280BEF4300765633 /* ShopTabViewController.swift in Sources */,
+				84A1E44A282A5D82005C034F /* SigninDataModel.swift in Sources */,
 				84E9F4B2281EE20300EA2567 /* FeedStoryDataModel.swift in Sources */,
 				8453D4DE28203DF500C1A775 /* PostTableViewCell.swift in Sources */,
 				84D00B0D27FE1C8400AEDEFA /* WelcomeViewController.swift in Sources */,
