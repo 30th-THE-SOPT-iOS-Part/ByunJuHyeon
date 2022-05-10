@@ -18,8 +18,8 @@ class SignAPI {
 extension SignAPI {
     // MARK: [POST] signin
     func signin(email: String,
-               password: String,
-               completion: @escaping (NetworkResult<Any>) -> Void)
+                password: String,
+                completion: @escaping (NetworkResult<Any>) -> Void)
     {
         
         let url = APIConstants.signinURL
@@ -31,10 +31,10 @@ extension SignAPI {
         ]
         
         let dataRequest = AF.request(url,
-                                    method: .post,
-                                    parameters: body,
-                                    encoding: JSONEncoding.default,
-                                    headers: header)
+                                     method: .post,
+                                     parameters: body,
+                                     encoding: JSONEncoding.default,
+                                     headers: header)
         
         dataRequest.responseData { response in
             switch response.result {
@@ -42,36 +42,19 @@ extension SignAPI {
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let value = response.value else { return }
                 
-                let networkResult = judgeStatus(by: statusCode, value)
+                let networkResult = self.signinJudgeData(statusCode, value)
                 completion(networkResult)
-            
+                
             case .failure:
                 completion(.networkFail)
             }
-        }
-        
-        func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
-            switch statusCode {
-            case 200: return isValidData(data: data)
-            case 400: return .pathErr
-            case 500: return .serverErr
-            default: return .networkFail
-            }
-        }
-        
-        func isValidData(data: Data) -> NetworkResult<Any> {
-            let decoder = JSONDecoder()
-            guard let decodedData = try? decoder.decode(GenericResponse<SigninResponseModel>.self, from: data)
-            else { return .pathErr }
-            
-            return .success(decodedData as Any)
         }
     }
     
     // MARK: [POST] signup
     func signup(email: String,
-               password: String,
-               completion: @escaping (NetworkResult<Any>) -> Void)
+                password: String,
+                completion: @escaping (NetworkResult<Any>) -> Void)
     {
         
         let url = APIConstants.signupURL
@@ -83,39 +66,61 @@ extension SignAPI {
         ]
         
         let dataRequest = AF.request(url,
-                                    method: .post,
-                                    parameters: body,
-                                    encoding: JSONEncoding.default,
-                                    headers: header)
+                                     method: .post,
+                                     parameters: body,
+                                     encoding: JSONEncoding.default,
+                                     headers: header)
         
         dataRequest.responseData { response in
             switch response.result {
             case .success:
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let value = response.value else { return }
-                let networkResult = judgeStatus(by: statusCode, value)
+                let networkResult = self.signupJudgeData(statusCode, value)
                 completion(networkResult)
-            
+                
             case .failure:
                 completion(.networkFail)
             }
         }
+    }
+}
+
+// MARK: - judge status & data
+extension SignAPI {
+    // MARK: signin
+    private func signinJudgeData(_ statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+        let decoder = JSONDecoder()
+        guard let decodedData = try? decoder.decode(GenericResponse<SigninResponseModel>.self, from: data)
+        else { return .pathErr }
         
-        func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
-            switch statusCode {
-            case 201: return isValidData(data: data)
-            case 400: return .pathErr
-            case 500: return .serverErr
-            default: return .networkFail
-            }
+        switch statusCode {
+        case 200:
+            return .success(decodedData)
+        case 400...409:
+            return .requestErr(decodedData.message)
+        case 500:
+            return .serverErr
+        default:
+            return .networkFail
         }
-        
-        func isValidData(data: Data) -> NetworkResult<Any> {
-            let decoder = JSONDecoder()
-            guard let decodedData = try? decoder.decode(GenericResponse<SignupResponseModel>.self, from: data)
-            else { return .pathErr }
-            
-            return .success(decodedData as Any)
+    }
+    
+    // MARK: signup
+    private func signupJudgeData(_ statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+        let decoder = JSONDecoder()
+        guard let decodedData = try? decoder.decode(GenericResponse<SignupResponseModel>.self, from: data)
+        else { return .pathErr }
+
+        switch statusCode {
+        case 201:
+            return .success(decodedData)
+        case 400...409:
+            return .requestErr(decodedData.message)
+        case 500:
+            return .serverErr
+        default:
+            return .networkFail
         }
     }
 }
