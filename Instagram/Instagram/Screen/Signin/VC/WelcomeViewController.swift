@@ -24,6 +24,23 @@ class WelcomeViewController: UIViewController {
     }
 }
 
+// MARK: - IBAction
+extension WelcomeViewController {
+    @IBAction func okButtonDidTap(_ sender: Any) {
+        if (password == nil) {
+            // 로그인의 경우 바로 탭바로 이동
+            goToTabBarController()
+        } else {
+            // 비밀번호가 왔으면 회원가입을 한 것이므로 회원 가입 서버 통신 필요
+            signup()
+        }
+    }
+    
+    @IBAction func reloginButtonDidTap(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+}
+
 // MARK: - Custom Methods
 extension WelcomeViewController {
     private func setWelcomeLabel() {
@@ -49,23 +66,8 @@ extension WelcomeViewController {
         alert.addAction(confirm)
         present(alert, animated: true, completion: nil)
     }
-    
-    
-    // MARK: IBAction
-    @IBAction func okButtonDidTap(_ sender: Any) {
-        if (password == nil) {
-            // 로그인의 경우 바로 탭바로 이동
-            goToTabBarController()
-        } else {
-            // 비밀번호가 왔으면 회원가입을 한 것이므로 회원 가입 서버 통신 필요
-            signup()
-        }
-    }
-    
-    @IBAction func reloginButtonDidTap(_ sender: Any) {
-        self.dismiss(animated: true)
-    }
 }
+
 
 // MARK: - Network
 extension WelcomeViewController {
@@ -76,19 +78,19 @@ extension WelcomeViewController {
         SignAPI.shared.signup(
             email: email,
             password: password) { response in
-            switch response {
-            case .success(_):
-                // 회원가입 성공 시 알럿창 띄우고 로그인 화면으로 이동
-                self.successAlert("회원가입 성공")
-            case .requestErr(let err):
-                print(err)
-            case .pathErr:
-                print("pathErr")
-            case .serverErr:
-                print("serverErr")
-            case .networkFail:
-                print("networkFail")
+                switch response {
+                case .success(_):
+                    // 회원가입 성공 시 알럿창 띄우고 로그인 화면으로 이동
+                    self.successAlert("회원가입 성공")
+                case .requestErr(let err):
+                    print(err)
+                case .pathErr:
+                    print("pathErr")
+                case .serverErr:
+                    print("serverErr")
+                case .networkFail:
+                    print("networkFail")
+                }
             }
-        }
     }
 }

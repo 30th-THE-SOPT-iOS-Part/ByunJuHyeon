@@ -24,18 +24,8 @@ class AddPasswordToSignupViewController: UIViewController {
     }
 }
 
-// MARK: - Custom Methods
+// MARK: - IBAction
 extension AddPasswordToSignupViewController {
-    private func addActionToTextField() {
-        // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
-        self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
-    }
-    
-    @objc func textFieldDidChange(sender: UITextField) {
-        self.nextButton.isEnabled = sender.hasText
-    }
-    
-    // MARK: IBAction
     @IBAction func backButtonDidTap(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -50,5 +40,17 @@ extension AddPasswordToSignupViewController {
         
         self.present(welcomeVC, animated: true, completion: nil)
         self.navigationController?.popToRootViewController(animated: true)
+    }
+}
+
+// MARK: - Custom Methods
+extension AddPasswordToSignupViewController {
+    private func addActionToTextField() {
+        // TextField에 이벤트 감지 시 함수 실행을 위한 addTarget() 설정
+        self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+    }
+    
+    @objc func textFieldDidChange(sender: UITextField) {
+        self.nextButton.isEnabled = sender.hasText
     }
 }

@@ -29,6 +29,31 @@ class SigninViewController: UIViewController {
     }
 }
 
+// MARK: - IBAction
+extension SigninViewController {
+    @IBAction func passwordEyeButtonDidTap(_ sender: Any) {
+        // textField에 대한 처리를 true -> false || false -> true
+        passwordTextField.isSecureTextEntry.toggle()
+        // eyeButton isSelected 값 반전
+        passwordEyeButton.isSelected.toggle()
+        // 버튼 선택 유무에 따른 눈 모양 이미지 변경
+        let eyeImage = passwordEyeButton.isSelected ? "icn_password_shown" : "icn_password_hidden"
+        passwordEyeButton.setImage(UIImage(named: eyeImage), for: .normal)
+        // 선택 시 틴트 컬러를 투명으로 변경해줌
+        passwordEyeButton.tintColor = .clear
+    }
+    
+    @IBAction func signinButtonDidTap(_ sender: Any) {
+        signin()
+    }
+    
+    @IBAction func signupButtonDidTap(_ sender: Any) {
+        guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: AddNameToSignupViewController.className) as? AddNameToSignupViewController else { return }
+        
+        self.navigationController?.pushViewController(signupVC, animated: true)
+    }
+}
+
 // MARK: - Custom Methods
 extension SigninViewController {
     private func resetTextField() {
@@ -60,29 +85,6 @@ extension SigninViewController {
         
         self.present(welcomeVC, animated: true, completion: nil)
     }
-    
-    // MARK: IBAction
-    @IBAction func passwordEyeButtonDidTap(_ sender: Any) {
-        // textField에 대한 처리를 true -> false || false -> true
-        passwordTextField.isSecureTextEntry.toggle()
-        // eyeButton isSelected 값 반전
-        passwordEyeButton.isSelected.toggle()
-        // 버튼 선택 유무에 따른 눈 모양 이미지 변경
-        let eyeImage = passwordEyeButton.isSelected ? "icn_password_shown" : "icn_password_hidden"
-        passwordEyeButton.setImage(UIImage(named: eyeImage), for: .normal)
-        // 선택 시 틴트 컬러를 투명으로 변경해줌
-        passwordEyeButton.tintColor = .clear
-    }
-    
-    @IBAction func signinButtonDidTap(_ sender: Any) {
-        signin()
-    }
-    
-    @IBAction func signupButtonDidTap(_ sender: Any) {
-        guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: AddNameToSignupViewController.className) as? AddNameToSignupViewController else { return }
-        
-        self.navigationController?.pushViewController(signupVC, animated: true)
-    }
 }
 
 // MARK: - Network
@@ -90,25 +92,25 @@ extension SigninViewController {
     func signin() {
         guard let email = idTextField.text else { return }
         guard let password = passwordTextField.text else { return }
-
+        
         SignAPI.shared.signin(
             email: email,
             password: password) { response in
-            switch response {
-            case .success(let data):
-                guard let data = data as? GenericResponse<SigninResponseModel> else { return }
-                // 로그인 성공시 welcomeVC로 이동, 사용자 id 전달
-                guard let name = data.data?.name else { return }
-                self.goToWelcomeVC(userId: name)
-            case .requestErr(let err):
-                print(err)
-            case .pathErr:
-                print("pathErr")
-            case .serverErr:
-                print("serverErr")
-            case .networkFail:
-                print("networkFail")
+                switch response {
+                case .success(let data):
+                    guard let data = data as? GenericResponse<SigninResponseModel> else { return }
+                    // 로그인 성공시 welcomeVC로 이동, 사용자 id 전달
+                    guard let name = data.data?.name else { return }
+                    self.goToWelcomeVC(userId: name)
+                case .requestErr(let err):
+                    print(err)
+                case .pathErr:
+                    print("pathErr")
+                case .serverErr:
+                    print("serverErr")
+                case .networkFail:
+                    print("networkFail")
+                }
             }
-        }
     }
 }
