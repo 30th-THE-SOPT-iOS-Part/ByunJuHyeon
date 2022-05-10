@@ -27,7 +27,7 @@ class WelcomeViewController: UIViewController {
 // MARK: - Custom Methods
 extension WelcomeViewController {
     private func setWelcomeLabel() {
-        if let userId = userId {
+        if let userId = userId?.components(separatedBy: "@")[0] {
             welcomeLabel.text = "\(userId)님 Instagram에 오신 것을 환영합니다"
             welcomeLabel.sizeToFit()
         }
