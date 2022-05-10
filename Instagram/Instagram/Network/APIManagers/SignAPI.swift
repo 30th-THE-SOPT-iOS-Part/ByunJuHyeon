@@ -70,4 +70,36 @@ extension SignAPI {
             }
         }
     }
+    
+    // MARK: [POST] signup
+    func signup(id: Int,
+               completion: @escaping (NetworkResult<Any>) -> Void)
+    {
+        
+        let url = APIConstants.signupURL
+        let header: HTTPHeaders = ["Content-Type" : "application/json"]
+        let body: Parameters = [
+            "id": id
+        ]
+        
+        let dataRequest = AF.request(url,
+                                    method: .post,
+                                    parameters: body,
+                                    encoding: JSONEncoding.default,
+                                    headers: header)
+        
+        dataRequest.responseData { response in
+            switch response.result {
+            case .success:
+                guard let statusCode = response.response?.statusCode else { return }
+                guard let value = response.value else { return }
+                
+                let networkResult = self.judgeStatus(by: statusCode, value)
+                completion(networkResult)
+            
+            case .failure:
+                completion(.networkFail)
+            }
+        }
+    }
 }
