@@ -44,8 +44,9 @@ extension AddPasswordToSignupViewController {
         guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: WelcomeViewController.className) as? WelcomeViewController else { return }
         
         welcomeVC.modalPresentationStyle = .fullScreen
-        // 회원가입(1)에서 받아온 사용자 id를 로그인 완료 VC로 전달
+        // 회원가입(1)에서 받아온 사용자 id와 비밀번호를 로그인 완료 VC로 전달
         welcomeVC.userId = userId
+        welcomeVC.password = passwordTextField.text
         
         self.present(welcomeVC, animated: true, completion: nil)
         self.navigationController?.popToRootViewController(animated: true)
