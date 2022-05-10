@@ -39,6 +39,17 @@ extension WelcomeViewController {
         self.view.window?.rootViewController = tabBarController
     }
     
+    private func successAlert(_ message: String) {
+        let message = message
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let confirm = UIAlertAction(title: "확인", style: .default, handler: { (action) -> Void in
+            self.dismiss(animated: true)
+        })
+        
+        alert.addAction(confirm)
+        present(alert, animated: true, completion: nil)
+    }
+    
     
     // MARK: IBAction
     @IBAction func okButtonDidTap(_ sender: Any) {
@@ -67,8 +78,8 @@ extension WelcomeViewController {
             password: password) { response in
             switch response {
             case .success(_):
-                // 회원가입 성공 시 탭바로 이동
-                self.goToTabBarController()
+                // 회원가입 성공 시 알럿창 띄우고 로그인 화면으로 이동
+                self.successAlert("회원가입 성공")
             case .requestErr(let err):
                 print(err)
             case .pathErr:
