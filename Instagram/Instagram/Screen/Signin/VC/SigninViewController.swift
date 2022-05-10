@@ -50,6 +50,17 @@ extension SigninViewController {
         self.signinButton.isEnabled = (idTextField.hasText && passwordTextField.hasText)
     }
     
+    func goToWelcomeVC(userId: String) {
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: WelcomeViewController.className) as? WelcomeViewController else { return }
+        
+        welcomeVC.modalPresentationStyle = .fullScreen
+        
+        // 로그인 완료 VC로 사용자 이름(id) 전달
+        welcomeVC.userId = userId
+        
+        self.present(welcomeVC, animated: true, completion: nil)
+    }
+    
     // MARK: IBAction
     @IBAction func passwordEyeButtonDidTap(_ sender: Any) {
         // textField에 대한 처리를 true -> false || false -> true
@@ -64,19 +75,41 @@ extension SigninViewController {
     }
     
     @IBAction func signinButtonDidTap(_ sender: Any) {
-        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: WelcomeViewController.className) as? WelcomeViewController else { return }
-        
-        welcomeVC.modalPresentationStyle = .fullScreen
-        
-        // 로그인 완료 VC로 사용자 id 전달
-        welcomeVC.userId = idTextField.text
-        
-        self.present(welcomeVC, animated: true, completion: nil)
+        // 서버 통신 로그인 함수 호출
+        signin()
     }
     
     @IBAction func signupButtonDidTap(_ sender: Any) {
         guard let signupVC = self.storyboard?.instantiateViewController(withIdentifier: AddNameToSignupViewController.className) as? AddNameToSignupViewController else { return }
         
         self.navigationController?.pushViewController(signupVC, animated: true)
+    }
+}
+
+// MARK: - Network
+extension SigninViewController {
+    func signin() {
+        guard let email = idTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+
+        SignAPI.shared.signin(
+            email: email,
+            password: password) { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? GenericResponse<SigninDataModel> else { return }
+                // 로그인 성공시 welcomeVC로 이동, 사용자 id 전달
+                guard let name = data.data?.name else { return }
+                self.goToWelcomeVC(userId: name)
+            case .requestErr(let err):
+                print(err)
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
 }
