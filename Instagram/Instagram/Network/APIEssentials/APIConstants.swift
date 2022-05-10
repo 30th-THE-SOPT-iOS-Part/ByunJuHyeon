@@ -7,11 +7,12 @@
 
 import Foundation
 
+// MARK: - URL
 struct APIConstants {
-    // MARK: - Base URL
+    // MARK: Base URL
     static let baseURL = "http://13.124.62.236"
     
-    // MARK: - Feature URL
+    // MARK: Feature URL
     static let signinURL = baseURL + "/auth/signin"
     static let signupURL = baseURL + "/auth/signup"
 }
