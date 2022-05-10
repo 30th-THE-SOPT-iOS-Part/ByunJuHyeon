@@ -72,14 +72,17 @@ extension SignAPI {
     }
     
     // MARK: [POST] signup
-    func signup(id: Int,
+    func signup(email: String,
+               password: String,
                completion: @escaping (NetworkResult<Any>) -> Void)
     {
         
-        let url = APIConstants.signupURL
+        let url = APIConstants.signinURL
         let header: HTTPHeaders = ["Content-Type" : "application/json"]
         let body: Parameters = [
-            "id": id
+            "name": email, // email값을 임의의 name으로 지정
+            "email": email,
+            "password": password
         ]
         
         let dataRequest = AF.request(url,
