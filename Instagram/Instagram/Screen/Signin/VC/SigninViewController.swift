@@ -75,7 +75,6 @@ extension SigninViewController {
     }
     
     @IBAction func signinButtonDidTap(_ sender: Any) {
-        // 서버 통신 로그인 함수 호출
         signin()
     }
     
@@ -97,7 +96,7 @@ extension SigninViewController {
             password: password) { response in
             switch response {
             case .success(let data):
-                guard let data = data as? GenericResponse<SigninDataModel> else { return }
+                guard let data = data as? GenericResponse<SigninResponseModel> else { return }
                 // 로그인 성공시 welcomeVC로 이동, 사용자 id 전달
                 guard let name = data.data?.name else { return }
                 self.goToWelcomeVC(userId: name)
