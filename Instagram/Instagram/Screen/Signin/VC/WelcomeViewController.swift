@@ -14,6 +14,7 @@ class WelcomeViewController: UIViewController {
     
     // MARK: - Properties
     var userId: String?
+    var password: String?
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -32,14 +33,51 @@ extension WelcomeViewController {
         }
     }
     
-    // MARK: IBAction
-    @IBAction func okButtonDidTap(_ sender: Any) {
+    private func goToTabBarController() {
         guard let tabBarController = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
         
         self.view.window?.rootViewController = tabBarController
     }
     
+    
+    // MARK: IBAction
+    @IBAction func okButtonDidTap(_ sender: Any) {
+        if (password == nil) {
+            // 로그인의 경우 바로 탭바로 이동
+            goToTabBarController()
+        } else {
+            // 비밀번호가 왔으면 회원가입을 한 것이므로 회원 가입 서버 통신 필요
+            signup()
+        }
+    }
+    
     @IBAction func reloginButtonDidTap(_ sender: Any) {
         self.dismiss(animated: true)
+    }
+}
+
+// MARK: - Network
+extension WelcomeViewController {
+    func signup() {
+        guard let email = userId else { return }
+        guard let password = password else { return }
+        
+        SignAPI.shared.signup(
+            email: email,
+            password: password) { response in
+            switch response {
+            case .success(_):
+                // 회원가입 성공 시 탭바로 이동
+                self.goToTabBarController()
+            case .requestErr(let err):
+                print(err)
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
 }
