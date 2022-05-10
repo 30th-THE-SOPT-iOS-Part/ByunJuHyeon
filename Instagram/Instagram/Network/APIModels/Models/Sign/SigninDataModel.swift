@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - DataClass
-struct SigninDataModel: Codable {
+struct SigninResponseModel: Codable {
     let name: String
     let email: String
 

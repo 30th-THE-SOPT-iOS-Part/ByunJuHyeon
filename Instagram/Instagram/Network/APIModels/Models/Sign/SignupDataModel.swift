@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - DataClass
-struct SignupDataModel: Codable {
+struct SignupResponseModel: Codable {
     let id: String
 
     enum CodingKeys: String, CodingKey {
