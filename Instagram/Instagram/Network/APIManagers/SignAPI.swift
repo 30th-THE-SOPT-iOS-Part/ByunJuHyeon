@@ -27,7 +27,7 @@ extension SignAPI {
     
     private func isValidData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(GenericResponse<SigninDataModel>.self, from: data)
+        guard let decodedData = try? decoder.decode(GenericResponse<SignupResponseModel>.self, from: data)
         else { return .pathErr }
         
         return .success(decodedData as Any)
@@ -77,7 +77,7 @@ extension SignAPI {
                completion: @escaping (NetworkResult<Any>) -> Void)
     {
         
-        let url = APIConstants.signinURL
+        let url = APIConstants.signupURL
         let header: HTTPHeaders = ["Content-Type" : "application/json"]
         let body: Parameters = [
             "name": email, // email값을 임의의 name으로 지정
