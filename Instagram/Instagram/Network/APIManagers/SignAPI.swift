@@ -14,26 +14,6 @@ class SignAPI {
     private init() {}
 }
 
-// MARK: - judge status & data
-extension SignAPI {
-    private func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
-        switch statusCode {
-        case 200: return isValidData(data: data)
-        case 400: return .pathErr
-        case 500: return .serverErr
-        default: return .networkFail
-        }
-    }
-    
-    private func isValidData(data: Data) -> NetworkResult<Any> {
-        let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(GenericResponse<SignupResponseModel>.self, from: data)
-        else { return .pathErr }
-        
-        return .success(decodedData as Any)
-    }
-}
-
 // MARK: - API
 extension SignAPI {
     // MARK: [POST] signin
@@ -62,12 +42,29 @@ extension SignAPI {
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let value = response.value else { return }
                 
-                let networkResult = self.judgeStatus(by: statusCode, value)
+                let networkResult = judgeStatus(by: statusCode, value)
                 completion(networkResult)
             
             case .failure:
                 completion(.networkFail)
             }
+        }
+        
+        func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+            switch statusCode {
+            case 200: return isValidData(data: data)
+            case 400: return .pathErr
+            case 500: return .serverErr
+            default: return .networkFail
+            }
+        }
+        
+        func isValidData(data: Data) -> NetworkResult<Any> {
+            let decoder = JSONDecoder()
+            guard let decodedData = try? decoder.decode(GenericResponse<SigninResponseModel>.self, from: data)
+            else { return .pathErr }
+            
+            return .success(decodedData as Any)
         }
     }
     
@@ -96,13 +93,29 @@ extension SignAPI {
             case .success:
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let value = response.value else { return }
-                
-                let networkResult = self.judgeStatus(by: statusCode, value)
+                let networkResult = judgeStatus(by: statusCode, value)
                 completion(networkResult)
             
             case .failure:
                 completion(.networkFail)
             }
+        }
+        
+        func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+            switch statusCode {
+            case 201: return isValidData(data: data)
+            case 400: return .pathErr
+            case 500: return .serverErr
+            default: return .networkFail
+            }
+        }
+        
+        func isValidData(data: Data) -> NetworkResult<Any> {
+            let decoder = JSONDecoder()
+            guard let decodedData = try? decoder.decode(GenericResponse<SignupResponseModel>.self, from: data)
+            else { return .pathErr }
+            
+            return .success(decodedData as Any)
         }
     }
 }
