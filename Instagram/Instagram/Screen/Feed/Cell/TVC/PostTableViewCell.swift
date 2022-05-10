@@ -10,7 +10,6 @@ import UIKit
 class PostTableViewCell: UITableViewCell {
     
     // MARK: - Properties
-    static let identifier = "PostTableViewCell"
     var clickLikeDelegate: SendUpdateStatusDelegate?
     
     // MARK: - IBOutlet

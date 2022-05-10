@@ -17,7 +17,7 @@ class FeedTabViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        let collectionViewNib = UINib(nibName: StoryCollectionViewCell.identifier, bundle: nil)
+        let collectionViewNib = UINib(nibName: StoryCollectionViewCell.className, bundle: nil)
         
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 4
@@ -25,7 +25,7 @@ class FeedTabViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        collectionView.register(collectionViewNib, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
+        collectionView.register(collectionViewNib, forCellWithReuseIdentifier: StoryCollectionViewCell.className)
         collectionView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 4 + 72 + 4)
         collectionView.showsHorizontalScrollIndicator = false
         
@@ -43,8 +43,8 @@ class FeedTabViewController: UIViewController {
 // MARK: - Custom Methods
 extension FeedTabViewController {
     private func setPostTableView() {
-        let nib = UINib(nibName: PostTableViewCell.identifier, bundle: nil)
-        postTableView.register(nib, forCellReuseIdentifier: PostTableViewCell.identifier)
+        let nib = UINib(nibName: PostTableViewCell.className, bundle: nil)
+        postTableView.register(nib, forCellReuseIdentifier: PostTableViewCell.className)
         
         postTableView.delegate = self
         postTableView.dataSource = self
@@ -70,11 +70,6 @@ extension FeedTabViewController: SendUpdateStatusDelegate {
     }
 }
 
-// MARK: - UICollectionViewDelegate
-extension FeedTabViewController: UICollectionViewDelegate {
-    
-}
-
 // MARK: - UICollectionViewDataSource
 extension FeedTabViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -82,7 +77,7 @@ extension FeedTabViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoryCollectionViewCell.identifier, for: indexPath) as? StoryCollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoryCollectionViewCell.className, for: indexPath) as? StoryCollectionViewCell else {
             return UICollectionViewCell()
         }
         cell.setData(storyData: FeedStoryDataModel.sampleData[indexPath.row])
@@ -124,10 +119,9 @@ extension FeedTabViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.identifier, for: indexPath) as? PostTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.className, for: indexPath) as? PostTableViewCell else { return UITableViewCell() }
         
         cell.setData(postData: FeedPostDataModel.sampleData[indexPath.row])
-        cell.contentImage.contentMode = .scaleAspectFill
         
         cell.clickLikeDelegate = self
         
