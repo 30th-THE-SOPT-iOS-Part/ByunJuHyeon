@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8453D4DB281FE70A00C1A775 /* FeedPostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453D4DA281FE70A00C1A775 /* FeedPostDataModel.swift */; };
+		8453D4DE28203DF500C1A775 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453D4DC28203DF500C1A775 /* PostTableViewCell.swift */; };
+		8453D4DF28203DF500C1A775 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8453D4DD28203DF500C1A775 /* PostTableViewCell.xib */; };
+		8453D4E228229A5A00C1A775 /* SendUpdateStatusDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453D4E128229A5A00C1A775 /* SendUpdateStatusDelegate.swift */; };
+		8453D4E72823C3FC00C1A775 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453D4E62823C3FC00C1A775 /* UIView+.swift */; };
+		8453D4E92823C42900C1A775 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453D4E82823C42900C1A775 /* UIViewController+.swift */; };
 		84AFA2FE280BC3AD00765633 /* AddNameToSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */; };
 		84AFA301280BC52800765633 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA300280BC52800765633 /* Welcome.storyboard */; };
 		84AFA303280BC5EA00765633 /* AddPasswordToSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */; };
@@ -31,9 +37,18 @@
 		84D00B0927FE1A7C00AEDEFA /* AddNameToSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00B0827FE1A7B00AEDEFA /* AddNameToSignupViewController.swift */; };
 		84D00B0B27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00B0A27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift */; };
 		84D00B0D27FE1C8400AEDEFA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00B0C27FE1C8400AEDEFA /* WelcomeViewController.swift */; };
+		84E9F4B2281EE20300EA2567 /* FeedStoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4B1281EE20300EA2567 /* FeedStoryDataModel.swift */; };
+		84E9F4BD281EF04D00EA2567 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4BB281EF04D00EA2567 /* StoryCollectionViewCell.swift */; };
+		84E9F4BE281EF04D00EA2567 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F4BC281EF04D00EA2567 /* StoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8453D4DA281FE70A00C1A775 /* FeedPostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostDataModel.swift; sourceTree = "<group>"; };
+		8453D4DC28203DF500C1A775 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		8453D4DD28203DF500C1A775 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		8453D4E128229A5A00C1A775 /* SendUpdateStatusDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendUpdateStatusDelegate.swift; sourceTree = "<group>"; };
+		8453D4E62823C3FC00C1A775 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		8453D4E82823C42900C1A775 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddNameToSignup.storyboard; sourceTree = "<group>"; };
 		84AFA300280BC52800765633 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPasswordToSignup.storyboard; sourceTree = "<group>"; };
@@ -60,6 +75,9 @@
 		84D00B0827FE1A7B00AEDEFA /* AddNameToSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNameToSignupViewController.swift; sourceTree = "<group>"; };
 		84D00B0A27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordToSignupViewController.swift; sourceTree = "<group>"; };
 		84D00B0C27FE1C8400AEDEFA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		84E9F4B1281EE20300EA2567 /* FeedStoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoryDataModel.swift; sourceTree = "<group>"; };
+		84E9F4BB281EF04D00EA2567 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		84E9F4BC281EF04D00EA2567 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,128 +91,299 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		847F4A952812602000CA5E6D /* Controllers */ = {
+		8453D4E028229A1800C1A775 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				84AFA2F8280BBD2C00765633 /* Auth */,
-				847F4A98281260C900CA5E6D /* TabBar */,
+				8453D4E128229A5A00C1A775 /* SendUpdateStatusDelegate.swift */,
 			);
-			path = Controllers;
+			path = Protocol;
 			sourceTree = "<group>";
 		};
-		847F4A962812603100CA5E6D /* Models */ = {
+		8453D4E42823C3A400C1A775 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				8453D4E52823C3B800C1A775 /* Extension */,
+				8453D4E028229A1800C1A775 /* Protocol */,
 			);
-			path = Models;
+			path = Global;
 			sourceTree = "<group>";
 		};
-		847F4A972812603600CA5E6D /* Views */ = {
+		8453D4E52823C3B800C1A775 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				84D00AFD27FE12CE00AEDEFA /* Assets.xcassets */,
-				84AFA307280BCD8B00765633 /* Storyboard */,
+				8453D4E62823C3FC00C1A775 /* UIView+.swift */,
+				8453D4E82823C42900C1A775 /* UIViewController+.swift */,
 			);
-			path = Views;
+			path = Extension;
 			sourceTree = "<group>";
 		};
-		847F4A98281260C900CA5E6D /* TabBar */ = {
+		8453D4EA2823C51C00C1A775 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				84AFA310280BED8000765633 /* TabBarController.swift */,
-				84AFA324280BEF4F00765633 /* MypageTabViewController.swift */,
-				84AFA322280BEF4300765633 /* ShopTabViewController.swift */,
-				84AFA320280BEF3A00765633 /* ReelsTabViewController.swift */,
-				84AFA31E280BEF0100765633 /* SearchTabViewController.swift */,
-				84AFA327280BF01500765633 /* FeedTabViewController.swift */,
+				8453D4FD2823C6BB00C1A775 /* Search */,
+				8453D4FC2823C6B600C1A775 /* Reels */,
+				8453D4FB2823C6B200C1A775 /* Shop */,
+				8453D4FA2823C6AC00C1A775 /* MyPage */,
+				8453D4F42823C62400C1A775 /* Feed */,
+				8453D4ED2823C55900C1A775 /* TabBar */,
+				8453D4EC2823C54A00C1A775 /* Signin */,
+				8453D4EB2823C54300C1A775 /* Signup */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		8453D4EB2823C54300C1A775 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				8453D4F12823C5AE00C1A775 /* SB */,
+				8453D4F02823C5AA00C1A775 /* VC */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		8453D4EC2823C54A00C1A775 /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				8453D4EE2823C57D00C1A775 /* SB */,
+				8453D4EF2823C58100C1A775 /* VC */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
+		8453D4ED2823C55900C1A775 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8453D4F32823C5E800C1A775 /* SB */,
+				8453D4F22823C5E400C1A775 /* VC */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
 		};
-		847F4A9B2812612900CA5E6D /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				847F4A9D2812614800CA5E6D /* Signup */,
-				847F4A9C2812613D00CA5E6D /* Signin */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		847F4A9C2812613D00CA5E6D /* Signin */ = {
+		8453D4EE2823C57D00C1A775 /* SB */ = {
 			isa = PBXGroup;
 			children = (
 				84D00AFA27FE12CD00AEDEFA /* Signin.storyboard */,
 				84AFA300280BC52800765633 /* Welcome.storyboard */,
 			);
-			path = Signin;
+			path = SB;
 			sourceTree = "<group>";
 		};
-		847F4A9D2812614800CA5E6D /* Signup */ = {
+		8453D4EF2823C58100C1A775 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */,
-				84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */,
-			);
-			path = Signup;
-			sourceTree = "<group>";
-		};
-		847F4A9E2812617300CA5E6D /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				84AFA30E280BECC700765633 /* TabBar.storyboard */,
-				84AFA31C280BEE9D00765633 /* Mypage.storyboard */,
-				84AFA31A280BEE9400765633 /* Shop.storyboard */,
-				84AFA318280BEE8D00765633 /* Reels.storyboard */,
-				84AFA316280BEE8600765633 /* Search.storyboard */,
-				84AFA329280BF01C00765633 /* Feed.storyboard */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
-		84AFA2F5280BBB9D00765633 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				84D00AF627FE12CD00AEDEFA /* SceneDelegate.swift */,
-				84D00AF427FE12CD00AEDEFA /* AppDelegate.swift */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		84AFA2F8280BBD2C00765633 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				84AFA306280BC6AB00765633 /* Singup */,
-				84AFA304280BC68400765633 /* Signin */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		84AFA304280BC68400765633 /* Signin */ = {
-			isa = PBXGroup;
-			children = (
-				84D00B0C27FE1C8400AEDEFA /* WelcomeViewController.swift */,
 				84D00AF827FE12CD00AEDEFA /* SigninViewController.swift */,
+				84D00B0C27FE1C8400AEDEFA /* WelcomeViewController.swift */,
 			);
-			path = Signin;
+			path = VC;
 			sourceTree = "<group>";
 		};
-		84AFA306280BC6AB00765633 /* Singup */ = {
+		8453D4F02823C5AA00C1A775 /* VC */ = {
 			isa = PBXGroup;
 			children = (
 				84D00B0A27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift */,
 				84D00B0827FE1A7B00AEDEFA /* AddNameToSignupViewController.swift */,
 			);
-			path = Singup;
+			path = VC;
 			sourceTree = "<group>";
 		};
-		84AFA307280BCD8B00765633 /* Storyboard */ = {
+		8453D4F12823C5AE00C1A775 /* SB */ = {
 			isa = PBXGroup;
 			children = (
-				84D00AFF27FE12CE00AEDEFA /* LaunchScreen.storyboard */,
-				847F4A9E2812617300CA5E6D /* TabBar */,
-				847F4A9B2812612900CA5E6D /* Auth */,
+				84AFA2FD280BC3AD00765633 /* AddNameToSignup.storyboard */,
+				84AFA302280BC5EA00765633 /* AddPasswordToSignup.storyboard */,
 			);
-			path = Storyboard;
+			path = SB;
+			sourceTree = "<group>";
+		};
+		8453D4F22823C5E400C1A775 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA310280BED8000765633 /* TabBarController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8453D4F32823C5E800C1A775 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA30E280BECC700765633 /* TabBar.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		8453D4F42823C62400C1A775 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				847F4A962812603100CA5E6D /* Model */,
+				8453D4F92823C69600C1A775 /* SB */,
+				8453D4F82823C69200C1A775 /* VC */,
+				8453D4F52823C63400C1A775 /* Cell */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		8453D4F52823C63400C1A775 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8453D4F72823C65800C1A775 /* TVC */,
+				8453D4F62823C65100C1A775 /* CVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8453D4F62823C65100C1A775 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4BB281EF04D00EA2567 /* StoryCollectionViewCell.swift */,
+				84E9F4BC281EF04D00EA2567 /* StoryCollectionViewCell.xib */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
+		8453D4F72823C65800C1A775 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				8453D4DC28203DF500C1A775 /* PostTableViewCell.swift */,
+				8453D4DD28203DF500C1A775 /* PostTableViewCell.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		8453D4F82823C69200C1A775 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA327280BF01500765633 /* FeedTabViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8453D4F92823C69600C1A775 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA329280BF01C00765633 /* Feed.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		8453D4FA2823C6AC00C1A775 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				8453D5052823C6E700C1A775 /* SB */,
+				8453D5042823C6E400C1A775 /* VC */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		8453D4FB2823C6B200C1A775 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				8453D5022823C6DB00C1A775 /* SB */,
+				8453D5032823C6DF00C1A775 /* VC */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		8453D4FC2823C6B600C1A775 /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				8453D5002823C6CE00C1A775 /* SB */,
+				8453D5012823C6D100C1A775 /* VC */,
+			);
+			path = Reels;
+			sourceTree = "<group>";
+		};
+		8453D4FD2823C6BB00C1A775 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8453D4FE2823C6BF00C1A775 /* SB */,
+				8453D4FF2823C6C500C1A775 /* VC */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8453D4FE2823C6BF00C1A775 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA316280BEE8600765633 /* Search.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		8453D4FF2823C6C500C1A775 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA31E280BEF0100765633 /* SearchTabViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8453D5002823C6CE00C1A775 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA318280BEE8D00765633 /* Reels.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		8453D5012823C6D100C1A775 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA320280BEF3A00765633 /* ReelsTabViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8453D5022823C6DB00C1A775 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA31A280BEE9400765633 /* Shop.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		8453D5032823C6DF00C1A775 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA322280BEF4300765633 /* ShopTabViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8453D5042823C6E400C1A775 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA324280BEF4F00765633 /* MypageTabViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8453D5052823C6E700C1A775 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				84AFA31C280BEE9D00765633 /* Mypage.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		847F4A962812603100CA5E6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4B1281EE20300EA2567 /* FeedStoryDataModel.swift */,
+				8453D4DA281FE70A00C1A775 /* FeedPostDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84AFA2F5280BBB9D00765633 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				84D00B0227FE12CE00AEDEFA /* Info.plist */,
+				84D00AFD27FE12CE00AEDEFA /* Assets.xcassets */,
+				84D00AFF27FE12CE00AEDEFA /* LaunchScreen.storyboard */,
+				84D00AF627FE12CD00AEDEFA /* SceneDelegate.swift */,
+				84D00AF427FE12CD00AEDEFA /* AppDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		84D00AE827FE12CD00AEDEFA = {
@@ -216,11 +405,9 @@
 		84D00AF327FE12CD00AEDEFA /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				84D00B0227FE12CE00AEDEFA /* Info.plist */,
-				847F4A972812603600CA5E6D /* Views */,
-				847F4A962812603100CA5E6D /* Models */,
-				847F4A952812602000CA5E6D /* Controllers */,
-				84AFA2F5280BBB9D00765633 /* Supporting Files */,
+				8453D4E42823C3A400C1A775 /* Global */,
+				8453D4EA2823C51C00C1A775 /* Screen */,
+				84AFA2F5280BBB9D00765633 /* Support */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -288,11 +475,13 @@
 				84AFA32A280BF01C00765633 /* Feed.storyboard in Resources */,
 				84AFA2FE280BC3AD00765633 /* AddNameToSignup.storyboard in Resources */,
 				84D00B0127FE12CE00AEDEFA /* LaunchScreen.storyboard in Resources */,
+				84E9F4BE281EF04D00EA2567 /* StoryCollectionViewCell.xib in Resources */,
 				84AFA31D280BEE9D00765633 /* Mypage.storyboard in Resources */,
 				84D00AFE27FE12CE00AEDEFA /* Assets.xcassets in Resources */,
 				84AFA303280BC5EA00765633 /* AddPasswordToSignup.storyboard in Resources */,
 				84AFA31B280BEE9400765633 /* Shop.storyboard in Resources */,
 				84AFA317280BEE8600765633 /* Search.storyboard in Resources */,
+				8453D4DF28203DF500C1A775 /* PostTableViewCell.xib in Resources */,
 				84AFA319280BEE8D00765633 /* Reels.storyboard in Resources */,
 				84D00AFC27FE12CD00AEDEFA /* Signin.storyboard in Resources */,
 			);
@@ -307,15 +496,22 @@
 			files = (
 				84AFA321280BEF3A00765633 /* ReelsTabViewController.swift in Sources */,
 				84D00B0927FE1A7C00AEDEFA /* AddNameToSignupViewController.swift in Sources */,
+				84E9F4BD281EF04D00EA2567 /* StoryCollectionViewCell.swift in Sources */,
 				84D00AF927FE12CD00AEDEFA /* SigninViewController.swift in Sources */,
 				84D00AF527FE12CD00AEDEFA /* AppDelegate.swift in Sources */,
 				84D00AF727FE12CD00AEDEFA /* SceneDelegate.swift in Sources */,
+				8453D4E72823C3FC00C1A775 /* UIView+.swift in Sources */,
+				8453D4DB281FE70A00C1A775 /* FeedPostDataModel.swift in Sources */,
 				84AFA325280BEF4F00765633 /* MypageTabViewController.swift in Sources */,
+				8453D4E228229A5A00C1A775 /* SendUpdateStatusDelegate.swift in Sources */,
 				84AFA31F280BEF0100765633 /* SearchTabViewController.swift in Sources */,
 				84AFA323280BEF4300765633 /* ShopTabViewController.swift in Sources */,
+				84E9F4B2281EE20300EA2567 /* FeedStoryDataModel.swift in Sources */,
+				8453D4DE28203DF500C1A775 /* PostTableViewCell.swift in Sources */,
 				84D00B0D27FE1C8400AEDEFA /* WelcomeViewController.swift in Sources */,
 				84AFA311280BED8000765633 /* TabBarController.swift in Sources */,
 				84AFA328280BF01500765633 /* FeedTabViewController.swift in Sources */,
+				8453D4E92823C42900C1A775 /* UIViewController+.swift in Sources */,
 				84D00B0B27FE1A9500AEDEFA /* AddPasswordToSignupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,7 +661,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83B9Y749K7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Instagram/Info.plist;
+				INFOPLIST_FILE = Instagram/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Signin;
@@ -493,7 +689,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83B9Y749K7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Instagram/Info.plist;
+				INFOPLIST_FILE = Instagram/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Signin;
