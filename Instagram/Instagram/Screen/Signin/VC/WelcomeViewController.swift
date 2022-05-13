@@ -27,14 +27,11 @@ class WelcomeViewController: UIViewController {
 // MARK: - IBAction
 extension WelcomeViewController {
     @IBAction func okButtonDidTap(_ sender: Any) {
-        if (password == nil) {
-            // 로그인의 경우 바로 탭바로 이동
-            goToTabBarController()
-        } else {
+        if let email = userId, let password = password {
             // 비밀번호가 왔으면 회원가입을 한 것이므로 회원 가입 서버 통신 필요
-            if let email = userId, let password = password {
-                signup(email, password)
-            }
+            signup(email, password)
+        } else {
+            goToTabBarController()
         }
     }
     
