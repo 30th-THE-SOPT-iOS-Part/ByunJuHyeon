@@ -67,7 +67,6 @@ extension WelcomeViewController {
     }
 }
 
-
 // MARK: - Network
 extension WelcomeViewController {
     func signup(_ email: String, _ password: String) {
@@ -76,7 +75,6 @@ extension WelcomeViewController {
             password: password) { response in
                 switch response {
                 case .success(_):
-                    // 회원가입 성공 시 알럿창 띄우고 로그인 화면으로 이동
                     self.successAlert("회원가입 성공")
                 case .requestErr(let err):
                     print(err)
