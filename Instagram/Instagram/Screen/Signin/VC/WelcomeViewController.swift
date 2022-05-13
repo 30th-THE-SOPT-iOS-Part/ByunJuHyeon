@@ -32,7 +32,9 @@ extension WelcomeViewController {
             goToTabBarController()
         } else {
             // 비밀번호가 왔으면 회원가입을 한 것이므로 회원 가입 서버 통신 필요
-            signup()
+            if let email = userId, let password = password {
+                signup(email, password)
+            }
         }
     }
     
@@ -71,10 +73,7 @@ extension WelcomeViewController {
 
 // MARK: - Network
 extension WelcomeViewController {
-    func signup() {
-        guard let email = userId else { return }
-        guard let password = password else { return }
-        
+    func signup(_ email: String, _ password: String) {
         SignAPI.shared.signup(
             email: email,
             password: password) { response in

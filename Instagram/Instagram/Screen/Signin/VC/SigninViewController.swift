@@ -44,7 +44,8 @@ extension SigninViewController {
     }
     
     @IBAction func signinButtonDidTap(_ sender: Any) {
-        signin()
+        if let email = idTextField.text, let password = passwordTextField.text {        signin(email, password)
+        }
     }
     
     @IBAction func signupButtonDidTap(_ sender: Any) {
@@ -89,10 +90,7 @@ extension SigninViewController {
 
 // MARK: - Network
 extension SigninViewController {
-    func signin() {
-        guard let email = idTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
-        
+    func signin(_ email: String, _ password: String) {
         SignAPI.shared.signin(
             email: email,
             password: password) { response in
